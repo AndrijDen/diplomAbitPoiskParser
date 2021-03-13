@@ -1,5 +1,6 @@
 package main;
 
+import database.repositories.StudentRepository;
 import database.repositories.UniversityRepository;
 import models.University;
 import parser.Parser;
@@ -21,24 +22,24 @@ public class Main {
 //        UniversityRepository universityRepository = new UniversityRepository();
 //        List<University> qwe = universityRepository.getAll();
 //        System.out.println("qwe" + qwe);
+
 //        DIRECTION SELECT FROM DB TEST
 //        DirectionRepository directionRepository = new DirectionRepository();
 //        List<Direction> qwe = directionRepository.getAll();
 
-//        Test insert into student
-//        StudentsRepository studentsRepository = new StudentsRepository();
+//        student Test insert into
+//        StudentRepository studentRepository = new StudentRepository();
 //        Students qwe = new Students( 0, "qwe", "qwe", 1, 1, 675589);
 //        System.out.println("qweqwe" + studentsRepository.insert(qwe));
-//
-//        System.out.println("get all" + studentsRepository.getAll());
+//        System.out.println("get all" + studentRepository.getAll());
 
 //        Student Parser test
-        Parser parser = new Parser();
-        parser.parseStudentsFromDirectionPageByDirectionIds();
+//        Parser parser = new Parser();
+//        parser.parseStudentsFromDirectionPageByDirectionIds();
 
 //        Student Statement Parser test
-//        Parser parser = new Parser();
-//        parser.parseStudentStatementsFromStudentInfoPage();
+        Parser parser = new Parser();
+        parser.parseStudentStatementsFromStudentInfoPage();
 
     }
 }

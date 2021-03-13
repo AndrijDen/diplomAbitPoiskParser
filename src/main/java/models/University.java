@@ -5,7 +5,6 @@ public class University {
     private String name;
     private String shortName;
 
-
     public University (int id, String name, String shortName) {
         this.id = id;
         this.name = name;

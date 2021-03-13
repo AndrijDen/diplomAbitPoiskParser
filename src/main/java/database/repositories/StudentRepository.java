@@ -1,20 +1,24 @@
 package database.repositories;
 
+import com.google.gson.Gson;
 import database.DBConnector;
 import models.Student;
+import models.ZnoMark;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StudentRepository {
 
+    private Gson gson = new Gson();
     private static final String selectAll = "SELECT * FROM students;";
     private static final String selectById = "SELECT * FROM students WHERE id=?;";
-    private final static String insertInto = "INSERT INTO students(name, searchLink, priority, grade, direction_id) VALUES(?,?,?,?,?);";
+    private final static String insertInto = "INSERT INTO students(name, searchLink, priority, grade, direction_id, averageSchoolMark, znoMarks) VALUES(?,?,?,?,?,?,?);";
 
     public List<Student> getAll() throws SQLException {
         Connection c = DBConnector.shared.getConnect();
@@ -38,9 +42,9 @@ public class StudentRepository {
         ps.setInt(3, student.getPriority());
         ps.setDouble(4, student.getGrade());
         ps.setInt(5, student.getDirection_id());
-//        System.out.print("qweqweqwewq" + student.getAverageSchoolMark());
-//        ps.setDouble(6, student.getAverageSchoolMark());
-//        ps.setString(7, student.getZnoMarks().toString());
+        ps.setDouble(6, student.getAverageSchoolMark());
+        String znoMarksJson = gson.toJson(student.getZnoMarks());
+        ps.setString(7, znoMarksJson);
         return ps.executeUpdate() == 1;
     }
 
@@ -60,6 +64,8 @@ public class StudentRepository {
         item.setPriority(resultSet.getInt("priority"));
         item.setGrade(resultSet.getInt("grade"));
         item.setDirection_id(resultSet.getInt("direction_id"));
+        item.setAverageSchoolMark(resultSet.getDouble("averageSchoolMark"));
+        item.setZnoMarks(gson.fromJson(resultSet.getString("znoMarks"), ZnoMark[].class));
         return item;
     }
 }

@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Arrays;
+
 public class Student {
 
     private int id;
@@ -8,17 +10,21 @@ public class Student {
     private int priority;
     private double grade;
     private int direction_id;
+    private double averageSchoolMark;
+    private ZnoMark[] znoMarks;
 
-    public Student(int id, String name, String searchLink, int priority, double grade, int direction_id) {
+    public Student(int id, String name, String searchLink, int priority, double grade, int direction_id, double averageSchoolMark, ZnoMark[] znoMarks) {
         this.id = id;
         this.name = name;
         this.searchLink = searchLink;
         this.priority = priority;
         this.grade = grade;
         this.direction_id = direction_id;
+        this.averageSchoolMark = averageSchoolMark;
+        this.znoMarks = znoMarks;
     }
 
-    public Student(){};
+    public Student(){}
 
     public int getId() {
         return id;
@@ -42,6 +48,14 @@ public class Student {
 
     public int getDirection_id() {
         return direction_id;
+    }
+
+    public double getAverageSchoolMark() {
+        return averageSchoolMark;
+    }
+
+    public ZnoMark[] getZnoMarks() {
+        return znoMarks;
     }
 
     public void setId(int id) {
@@ -68,6 +82,14 @@ public class Student {
         this.direction_id = direction_id;
     }
 
+    public void setAverageSchoolMark(double averageSchoolMark) {
+        this.averageSchoolMark = averageSchoolMark;
+    }
+
+    public void setZnoMarks(ZnoMark[] znoMarks) {
+        this.znoMarks = znoMarks;
+    }
+
     @Override
     public String toString() {
         return "{" +
@@ -77,6 +99,8 @@ public class Student {
                 ", priority=" + priority +
                 ", grade=" + grade +
                 ", direction_id=" + direction_id +
+                ", averageSchoolMark=" + averageSchoolMark +
+                ", znoMarks='" + Arrays.toString(znoMarks) + '\'' +
                 '}';
     }
 }
