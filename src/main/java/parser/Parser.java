@@ -3,20 +3,40 @@ package parser;
 import com.google.gson.Gson;
 import database.repositories.DirectionRepository;
 import database.repositories.StudentRepository;
+import database.repositories.StudentStatementRepository;
 import models.Direction;
 import models.Student;
+import models.StudentStatement;
 import models.ZnoMark;
+import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class Parser {
+    private CheckStudentByZnoMarksService checkStudentByZnoMarksService = new CheckStudentByZnoMarksService();
+    private StudentStatementRepository studentStatementRepository = new StudentStatementRepository();
+    private StudentRepository studentsRepository = new StudentRepository();
     private String baseURL = "https://abit-poisk.org.ua";
     private int year = 2020;
     private int id = 0;
@@ -32,30 +52,29 @@ public class Parser {
         DirectionRepository directionRepository = new DirectionRepository();
         List<Direction> directionList = directionRepository.getAll();
 
-//        for (Direction direction: directionList) {
-//            String directionUrl = directionBaseUrl + direction.getId();
-        for (int i = 0; i < 1; i++) {
-            String directionUrl = directionBaseUrl + directionList.get(i).getId();
-
+        for (Direction direction: directionList) {
+            String directionUrl = directionBaseUrl + direction.getId();
+/*        for (int i = 0; i < 1; i++) {
+            String directionUrl = directionBaseUrl + directionList.get(i).getId();*/
             Document doc = Jsoup.connect(directionUrl).get();
             Elements studentsTable = doc.select("tr.application-status-9:has([data-header=\"Пріоритет\"]:matches([2-9]))");
             for (Element studentsTableItem : studentsTable) {
-                Elements marksBlock = studentsTableItem.select("tr > td:nth-child(6) > div > ul");
-                double averageSchoolMark  = Double.parseDouble(marksBlock.select("ul > li:last-child > strong").text());
-                String name = studentsTableItem.select("tr > td:nth-child(2) a").text();
-                String searchLink = studentsTableItem.select("tr > td:nth-child(2) a").attr("href") + "+" + averageSchoolMark;
-                int priority = Integer.parseInt(studentsTableItem.select("tr > td:nth-child(3)").text());
-                double grade = Double.parseDouble(studentsTableItem.select("tr > td:nth-child(4)").text());
-                int direction_id = directionList.get(i).getId();
-//                int direction_id = direction.getId();
-
-                Student student = new Student(0, name, searchLink, priority, grade, direction_id, averageSchoolMark, getAllZnoMarks(marksBlock));
-
-                StudentRepository studentsRepository = new StudentRepository();
-                studentsRepository.insert(student);
-                System.out.println("student" + student);
+                getStudentFromHtmlAndInsertToDb(studentsTableItem, direction.getId());
+              /*  getStudentFromHtmlAndInsertToDb(studentsTableItem, directionList.get(i).getId());*/
             }
         }
+    }
+
+    private void getStudentFromHtmlAndInsertToDb(Element studentHtml, int directionId) throws SQLException {
+        Elements marksBlock = studentHtml.select("tr > td:nth-child(6) > div > ul");
+        double averageSchoolMark  = Double.parseDouble(marksBlock.select("ul > li:last-child > strong").text());
+        String name = studentHtml.select("tr > td:nth-child(2) a").text();
+        String searchLink = studentHtml.select("tr > td:nth-child(2) a").attr("href") + "+" + averageSchoolMark;
+        int priority = Integer.parseInt(studentHtml.select("tr > td:nth-child(3)").text());
+        double grade = Double.parseDouble(studentHtml.select("tr > td:nth-child(4)").text());
+
+        Student student = new Student(0, name, searchLink, priority, grade, directionId, averageSchoolMark, getAllZnoMarks(marksBlock));
+        studentsRepository.insert(student);
     }
 
     private ZnoMark[] getAllZnoMarks(Elements marksBlock) {
@@ -70,23 +89,59 @@ public class Parser {
         return znoMarks.toArray(new ZnoMark[0]);
     }
 
-    public void parseStudentStatementsFromStudentInfoPage() throws SQLException, IOException {
+    public void parseStudentStatementsFromStudentInfoPage() throws SQLException {
         StudentRepository studentsRepository = new StudentRepository();
         List<Student> studentsList = studentsRepository.getAll();
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\diplom\\Libraries\\ChromeDriver\\chromedriver.exe");
 
-        for (int i = 0; i < 1; i++) {
-            String studentInfoUrl = baseURL + studentsList.get(i).getSearchLink();
-            Document doc = Jsoup.connect(studentInfoUrl).get();
-            System.out.println("studentInfoUrl" + studentInfoUrl);
+      for (Student student: studentsList) {
+          String studentInfoUrl = baseURL + student.getSearchLink();
+          WebDriver driver = new ChromeDriver();
+          driver.get(studentInfoUrl);
+          WebDriverWait wait = new WebDriverWait(driver, 10);
+          WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("table")));
+          driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-//            first-child > dl > dd:nth-child(2)
-//            Elements incorrectObj = doc.select("dl");
-//            System.out.println("incorrectObj" + incorrectObj);
+          String pageSource = driver.getPageSource();
+          Document doc = Jsoup.parse(pageSource);
 
-            Elements studentsTable = doc.select("tr.application-status-9:has([data-header=\"Пріоритет\"]:matches([2-9]))");
-            System.out.println("studentsTable" + studentsTable);
-//            System.out.println("doc" + doc);
-        }
+          String selectHtmlHigherPrioritiesOfStudent = "tr:has([data-header=\"Пріоритет\"]:matches([1-%s]))".formatted(student.getPriority() - 1);
+          Elements higherPrioritiesData = doc.select(selectHtmlHigherPrioritiesOfStudent);
+
+          if (higherPrioritiesData.size() > 1) {
+              for (Element studentsTableItem : higherPrioritiesData) {
+                  Elements studentZnoMarksHtml = studentsTableItem.select("td[data-header=\"Складові заг. балу\"] > dl");
+                  if (checkStudentByZnoMarksService.isCurrentStudent(studentZnoMarksHtml, student.getZnoMarks())) {
+                      getStudentStatementFromHtmlAndInsertToDb(studentsTableItem, student.getId());
+                  }
+              }
+          } else {
+                  getStudentStatementFromHtmlAndInsertToDb(higherPrioritiesData.first(), student.getId());
+          }
+          driver.close();
+      }
     }
 
+    private void getStudentStatementFromHtmlAndInsertToDb(Element studentHtml, int studentId) throws SQLException {
+        double grade = Double.parseDouble(studentHtml.select("tr > td:nth-child(7)").text());
+        int priority = Integer.parseInt(studentHtml.select("tr > td:nth-child(5)").text());
+        String universityShortName = studentHtml.select("tr > td:nth-child(10) a").text();
+        int directionDataId = Integer.parseInt(studentHtml.select("tr > td:nth-child(12) span").text());
+        StudentStatement studentStatement = new StudentStatement(0, grade, priority, universityShortName, directionDataId, studentId);
+
+        System.out.print("studentStatement" + studentStatement);
+
+        studentStatementRepository.insert(studentStatement);
+    }
+
+    public void writeStudentStatementsTestPage(String str)
+            throws IOException {
+        FileUtils.writeStringToFile(new File("StudentStatementsTestPage.txt"), str);
+    }
+
+    public String readStudentStatementsTestPage()
+            throws IOException {
+        String content = Files.readString(Path.of("StudentStatementsTestPage.txt"), StandardCharsets.UTF_8);
+        return content;
+    }
 }

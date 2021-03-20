@@ -1,0 +1,1262 @@
+<html lang="uk">
+ <head>
+  <style type="text/css">/*rippleJS*/.rippleJS,.rippleJS.fill::after{position:absolute;top:0;left:0;right:0;bottom:0}.rippleJS{display:block;overflow:hidden;border-radius:inherit;-webkit-mask-image:-webkit-radial-gradient(circle,#fff,#000)}.rippleJS.fill::after{content:""}.rippleJS.fill{border-radius:1000000px}.rippleJS .ripple{position:absolute;border-radius:100%;background:currentColor;opacity:.2;width:0;height:0;-webkit-transition:-webkit-transform .4s ease-out,opacity .4s ease-out;transition:transform .4s ease-out,opacity .4s ease-out;-webkit-transform:scale(0);transform:scale(0);pointer-events:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.rippleJS .ripple.held{opacity:.4;-webkit-transform:scale(1);transform:scale(1)}.rippleJS .ripple.done{opacity:0}</style> <!-- Global site tag (gtag.js) - Google Analytics --> 
+  <script src="https://cdn.ampproject.org/rtv/012101070013000/amp4ads-host-v0.js"></script>
+  <script src="https://pagead2.googlesyndication.com/pagead/js/r20210309/r20190131/reactive_library_fy2019.js"></script>
+  <script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script>
+  <script src="https://partner.googleadservices.com/gampad/cookie.js?domain=abit-poisk.org.ua&amp;callback=_gfp_s_&amp;client=ca-pub-6880298536449575"></script>
+  <script src="https://pagead2.googlesyndication.com/pagead/js/r20210309/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script>
+  <script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38439553-1"></script> 
+  <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-38439553-1');
+    </script> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="shortcut icon" href="/favicon.png"> 
+  <meta name="keywords" content="пошук абітурієнтів,рейтингові списки 2020 2019 2018 статистика вступу,прохідний бал,інформація про вузи україни,пошук заяв абітурієнтів"> 
+  <meta name="description" content="Пошук заяв абітурієнтів. Оцінка прохідного балу на обраний напрям підготовки. Рейтингові списки вузів 2020 2019 2018. Статистика вступу у вищі навчальні заклади"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" href="/assets/dist/main.1cd44eb849a5681da6c6.css"> 
+  <title>Пошук абітурієнтів 2020</title> 
+  <link rel="manifest" href="/manifest.json"> 
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+  <script>
+			 (adsbygoogle = window.adsbygoogle || []).push({
+				  google_ad_client: "ca-pub-6880298536449575",
+				  enable_page_level_ads: true
+			 });
+		</script> 
+  <meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+  <meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <link rel="preload" href="https://adservice.google.com.ua/adsid/integrator.js?domain=abit-poisk.org.ua" as="script">
+  <script type="text/javascript" src="https://adservice.google.com.ua/adsid/integrator.js?domain=abit-poisk.org.ua"></script>
+  <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=abit-poisk.org.ua" as="script">
+  <script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=abit-poisk.org.ua"></script>
+  <link rel="preload" href="https://adservice.google.com.ua/adsid/integrator.js?domain=abit-poisk.org.ua" as="script">
+  <script type="text/javascript" src="https://adservice.google.com.ua/adsid/integrator.js?domain=abit-poisk.org.ua"></script>
+  <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=abit-poisk.org.ua" as="script">
+  <script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=abit-poisk.org.ua"></script>
+ </head> 
+ <body aria-hidden="false"> 
+  <div id="js-ba-options" data-options="{&quot;banners&quot;:[[&quot;\/assets\/images\/coco-100-dark.png&quot;,&quot;100-dark&quot;,&quot;coco-banner&quot;,&quot;http:\/\/lx4.me\/c\/zRhZUiHK&quot;],[&quot;\/assets\/images\/coco-100-pink.png&quot;,&quot;100-pink&quot;,&quot;coco-banner&quot;,&quot;http:\/\/lx4.me\/c\/zRhZUiHK&quot;]],&quot;selectors&quot;:{&quot;slot&quot;:&quot;.js-ba-slot&quot;,&quot;bannerLink&quot;:&quot;.js-ba-banner-link&quot;}}" style="display: none"></div> 
+  <div class="wrapper" style="min-height: 100% !important;"> 
+   <div class="top-alert application-status-9 card-content text-center body-1 hidden" style="padding:8px">
+     Опубліковано рекомендації до зарахування на бюджет (Магістр 081 та 293) 
+   </div> 
+   <div class="visible-sm-block visible-xs-block js-ba-slot" style="font-size: 0px; min-height: 140px; width: 100%; background-color: rgb(204, 204, 204); text-align: center; margin: 0px auto;">
+    <a href="http://lx4.me/c/zRhZUiHK" target="_blank" class="js-ba-banner-link" data-ba-theme="100-dark" data-ba-name="coco-banner"><img style="height: auto;max-width: 100%;" src="/assets/images/coco-100-dark.png" alt="banner"></a>
+   </div> <!--    <div class="top-alert card-content light-primary-bg text-center body-1" style="padding:8px">--> <!--        <a href="javascript:void" class="attr"--> <!--           data-toggle="modal" data-target="#vstup-osvita-corrupted">--> <!--            Адміністратори Vstup.osvita.ua випадковим чином спотворюють рейтингові списки--> <!--        </a>--> <!--    </div>--> 
+   <div class="scroll-block" id="js-abit-scroll-block"> 
+    <div class="scroll-item"></div> 
+   </div> 
+   <header class="header white-bg"> 
+    <div class="main-header-content"> <a href="/" class="logo" id="js-abit-logo"> <i class="flaticon-graduate"></i> Abit-poisk.org.ua </a> 
+     <nav> <label for="show-menu" class="show-menu"><i class="icon-menu"></i></label> 
+      <input type="checkbox" id="show-menu" role="button"> 
+      <ul class="header-navigation"> 
+       <li><a href="/rate-review/">Рейтингові списки 2020</a></li> 
+       <li><a href="/specialities2020/">Спеціальності 2020</a></li> 
+       <li><a href="/rate2020/global/">Широкий конкурс <sup class="red-color">2020</sup></a></li> 
+       <li><a href="#" class="js-show-fav-list-modal">Обране</a></li> 
+      </ul> 
+     </nav> 
+    </div> 
+   </header> 
+   <div class="absolute-center" id="loader"> 
+    <div class=" white-bg shadow-5 loader-text secondary-text">
+      Зачекайте... 
+     <div id="loading" class="spin-1"></div> 
+    </div> 
+   </div> 
+   <div class="main-content" id="mainContent" style="position: relative"> 
+    <div style="margin-top:15px"> 
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- abit-poisk-responsive --> 
+     <ins class="adsbygoogle adslot_1" style="display: block; margin-left: auto; margin-right: auto; width: 728px; height: 90px;" data-ad-client="ca-pub-6880298536449575" data-ad-slot="1889883649" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:728px;height:90px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6880298536449575&amp;output=html&amp;h=90&amp;slotname=1889883649&amp;adk=2664030512&amp;adf=2489258746&amp;pi=t.ma~as.1889883649&amp;w=728&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1615834435&amp;rafmt=12&amp;psa=0&amp;format=728x90&amp;url=https%3A%2F%2Fabit-poisk.org.ua%2F%23search-%25D0%259F%25D0%25BE%25D0%25BB%25D1%2596%25D1%2589%25D1%2583%25D0%25BA%2B%25D0%259E.%2B%25D0%2592.%2B2020%2B11.1&amp;flash=0&amp;fwr=0&amp;fwrattr=true&amp;rh=90&amp;rw=728&amp;sfro=1&amp;wgl=1&amp;dt=1615834435000&amp;bpp=7&amp;bdt=473&amp;idt=216&amp;shv=r20210309&amp;cbv=r20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=6829036755382&amp;frm=20&amp;pv=1&amp;ga_vid=713278974.1615834435&amp;ga_sid=1615834435&amp;ga_hid=1837713358&amp;ga_fc=0&amp;u_tz=120&amp;u_his=2&amp;u_java=0&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;adx=92&amp;ady=204&amp;biw=912&amp;bih=911&amp;scr_x=0&amp;scr_y=0&amp;eid=42530672&amp;oid=3&amp;pvsid=4134007612280581&amp;pem=831&amp;rx=0&amp;eae=0&amp;fc=1920&amp;brdim=10%2C10%2C10%2C10%2C1920%2C0%2C945%2C1060%2C929%2C928&amp;vis=1&amp;rsz=%7Cm%7CpeE%7Cp&amp;abl=XS&amp;pfx=0&amp;fu=9344&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=iNRvN1ZePm&amp;p=https%3A//abit-poisk.org.ua&amp;dtd=223" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!2" data-load-complete="true" data-google-query-id="CMO1w6v8su8CFfCBmwoddisFRw"></iframe></ins></ins></ins> 
+     <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script> 
+    </div> 
+    <div class="modal" id="search-examples" tabindex="-1" role="dialog"> 
+     <div class="modal-dialog modal-lg" role="document"> 
+      <div class="modal-content"> 
+       <div class="modal-header"> <button type="button" class="close" style="font-size: 41px;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+        <h4 class="display-1 modal-title">Приклади пошукових запитів</h4> 
+       </div> 
+       <div class="modal-body font400"> 
+        <div>
+         <strong>2020 - 2018 роки:</strong>
+        </div> 
+        <div> <a href="#" class="js-search-example">Лукащук К. І. 2019</a> 
+        </div> 
+        <div> <a href="#" class="js-search-example">Ромадін В. В. 10.3 2018</a> 
+        </div> 
+        <div>
+         <i>де 10.3 — середній бал документа про освіту</i>
+        </div> 
+        <hr> 
+        <div>
+         Зауважимо, що середній бал атестата у 2017 році ІС Конкурс чомусь вирішив не публікувати, а отже його вводити не потрібно
+        </div> 
+        <div>
+         <strong>2017 рік:</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Жировецька С. Г. 2017</a> 
+        </div> 
+        <div>
+         <strong>перед ініціалами не обов’язково ставити крапки:</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">жировецька с г 2017</a>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">хом`як о с 2017</a>
+        </div> 
+        <div>
+         <strong>замість апострофа можно ставити символ @</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">хом@як о с 2017</a>
+        </div> <strong>Якщо ПІБ зашифроване:</strong> 
+        <div>
+         <a href="#" class="js-search-example">П* Діана Миколаївна 2017</a>
+        </div> 
+        <hr> 
+        <div>
+         <strong>2016 рік:</strong>
+        </div> 
+        <div> <a href="#" class="js-search-example">Кононяко Л. В. 2016</a> 
+        </div> 
+        <div> <a href="#" class="js-search-example">Кононяко Л. В. 9.75 2016</a> 
+        </div> 
+        <div>
+         <i>де 9.75 — середній бал атестата за 200 бальною шкалою, помножений на ваговий коефіцієнт</i>
+        </div> 
+        <hr> 
+        <div>
+         <strong>2010 - 2015 роки:</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Пархоменко Наталія Олександрівна 2014</a>
+        </div> 
+        <div>
+         <i>Зауважимо, що ПІБ потрібно вводити повністю</i>
+        </div> 
+        <hr> 
+        <div> <strong>Додаткові фільтри, актуальні для всіх років</strong> 
+        </div> 
+        <div>
+         <strong>Рік вступу:</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Жировецька С. Г. 2017</a>
+        </div> 
+        <div>
+         <strong>ОКР</strong> (Освітньо-кваліфікаційний рівень):
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Марчан О. Р. молодший спеціаліст</a> <strong>або</strong> <a href="#" class="js-search-example">Марчан О. Р. окр1</a>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Жировецька С. Г. бакалавр</a> <strong>або</strong> <a href="#" class="js-search-example">Жировецька С. Г. окр2</a>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Охріменко М. М. магістр</a> <strong>або</strong> <a href="#" class="js-search-example">Охріменко М. М. окр4</a>
+        </div> 
+        <div>
+         <strong>Форма навчання:</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Жировецька С. Г. денна</a>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Таран Є. Р. заочна</a>
+        </div> 
+        <div>
+         <strong>Спеціальність:</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">шевченко а.а. с241</a>
+        </div> 
+        <div>
+         <i>де 241 - шифр спеціальності, починати потрібно з літери <strong>с</strong></i>
+        </div> 
+        <div>
+         <strong>Фільтри можна комбінувати, порядок неважливий:</strong>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">2016 Водотієць О. магістр денна</a>
+        </div> 
+        <div>
+         <a href="#" class="js-search-example">Діденко Анатолій Сергійович 2013 184.80 бакалавр денна</a>
+        </div> 
+        <div>
+         <i>де 184.80 — середній бал атестата за 200 бальною шкалою</i>
+        </div> 
+       </div> 
+       <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Закрити </button> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="card white-bg shadow-z-2"> 
+     <div class="card-header primary-bg text-color"> 
+      <h3 class="title card-header-title"> Сервіс пошуку абітурієнтів </h3> 
+      <h4 class="font400" style="display:none"> Заяв: <strong>1 546 556</strong> станом на 14.08.2019 01:02 </h4> 
+      <div class=""> <span class="attr-white" data-toggle="modal" data-target="#search-examples">Приклади пошукових запитів</span> 
+      </div> 
+     </div> 
+     <div class="card-content"> 
+      <div class="input-box text-center"> 
+       <div class=""> 
+        <input type="text" id="searchInput" placeholder="ПІБ (рік вступу)" class="search-input"> <button class="btn btn-lg btn-raised btn-primary" id="searchButton">Пошук 
+         <link class="rippleJS"></button> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div style="display: block;" id="searchResult" class=""> 
+     <div class="card shadow-z-2 white-bg"> 
+      <div class="card-content"> 
+       <dl class="dl-horizontal"> 
+        <dt>
+          Рік 
+        </dt> 
+        <dd>
+          2020 
+        </dd> 
+        <dt>
+          Знайдено заяв 
+        </dt> 
+        <dd>
+          17 
+        </dd> 
+        <dt>
+          Показано 
+        </dt> 
+        <dd>
+          17 
+        </dd> 
+        <dt>
+          Лінк на цей пошук 
+        </dt> 
+        <dd class="horizontal-scroll-xs" style="width: auto"> <a class="word-break" href="https://abit-poisk.org.ua/#search-Поліщук+О.+В.+2020+11.1">https://abit-poisk.org.ua/#search-Поліщук+О.+В.+2020+11.1</a> 
+        </dd> 
+       </dl> 
+       <div class="horizontal-scroll-xs"> <button class="btn btn-flat btn-default" data-clipboard-text="https://abit-poisk.org.ua/#search-Поліщук+О.+В.+2020+11.1" id="search-clipboard" style="position: relative;margin-left: -1.1em">Скопіювати лінк на цей пошук
+         <link class="rippleJS"></button> <button data-key="search20201968182670" data-name="Пошук | Поліщук О. В. 2020 11.1" data-url="https://abit-poisk.org.ua/#search-Поліщук+О.+В.+2020+11.1" data-class="js-search-example" data-type="search" title="Обране" style="" class=" btn btn-flat btn-default js-add-to-fav add-to-fav"> <i class="icon icon-star-empty "></i> Додати в обране</button> 
+       </div> <!--<div style="margin-top:5px;">
+                <strong>Увага! Номер у рейтинговому списку за Конкурсним балом з ур. Ц,ПК,ПЧ тимчасово не розраховується</strong>
+            </div>!--> 
+      </div> 
+     </div> 
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- abit-poisk-responsive --> 
+     <ins class="adsbygoogle adslot_1" style="display: block; margin: 8px auto; max-width: 100%; overflow: hidden; width: 728px; height: 90px;" data-ad-client="ca-pub-6880298536449575" data-ad-slot="1889883649" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_2_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:728px;height:90px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6880298536449575&amp;output=html&amp;h=90&amp;slotname=1889883649&amp;adk=3291270589&amp;adf=3966014480&amp;pi=t.ma~as.1889883649&amp;w=728&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1615834435&amp;rafmt=12&amp;psa=0&amp;format=728x90&amp;url=https%3A%2F%2Fabit-poisk.org.ua%2F%23search-%25D0%259F%25D0%25BE%25D0%25BB%25D1%2596%25D1%2589%25D1%2583%25D0%25BA%2B%25D0%259E.%2B%25D0%2592.%2B2020%2B11.1&amp;flash=0&amp;fwr=0&amp;fwrattr=true&amp;rh=90&amp;rw=728&amp;sfro=1&amp;wgl=1&amp;dt=1615834435077&amp;bpp=1&amp;bdt=550&amp;idt=154&amp;shv=r20210309&amp;cbv=r20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0%2C728x90&amp;nras=1&amp;correlator=6829036755382&amp;frm=20&amp;pv=1&amp;ga_vid=713278974.1615834435&amp;ga_sid=1615834435&amp;ga_hid=1837713358&amp;ga_fc=0&amp;u_tz=120&amp;u_his=2&amp;u_java=0&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;adx=92&amp;ady=675&amp;biw=912&amp;bih=911&amp;scr_x=0&amp;scr_y=0&amp;eid=42530672&amp;oid=3&amp;pvsid=4134007612280581&amp;pem=831&amp;rx=0&amp;eae=0&amp;fc=1920&amp;brdim=10%2C10%2C10%2C10%2C1920%2C0%2C945%2C1060%2C929%2C928&amp;vis=1&amp;rsz=%7Cm%7CpeoE%7Cp&amp;abl=XS&amp;pfx=0&amp;fu=9344&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;fsb=1&amp;xpc=5GwF3q9jct&amp;p=https%3A//abit-poisk.org.ua&amp;dtd=158" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!3" data-google-query-id="CIuzw6v8su8CFY23mgod-o0JIw" data-load-complete="true"></iframe></ins></ins></ins> 
+     <script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script> 
+     <div class="card shadow-z-2 white-bg"> 
+      <div class="table-responsive"> 
+       <table class="table table-bordered table-hover"> 
+        <thead> 
+         <tr> 
+          <th class="help-title" title="Освітньо кваліфікаційні рівень" style="width:5%;">ОКР</th> 
+          <th class="help-title" title="ПІБ абітурієнта" style="width: 23%">ПІБ</th> 
+          <th class="help-title" title="Статус заяви" style="width: 8%">С</th> 
+          <th class="help-title" title="Порядковий номер у списку" style="width:4%">№</th> 
+          <th class="help-title" title="Пріоритет заяви" style="width: 3%">П</th> 
+          <th class="help-title" style="width:12%" title="Місця">Місця</th> 
+          <th class="help-title" title="Конкурсний бал">∑</th> 
+          <th class="help-title" title="Середній бал документа про освіту" style="width: 6%">СБО</th> 
+          <th class="help-title" style="width:18%" title="Складові конкурсного балу, коефіцієнти">Скл. кон. балу</th> 
+          <th class="help-title" title="Вищий навчальний заклад" style="width: 10%">ВНЗ</th> 
+          <th class="help-title" title="Факультет/Інститут" style="width:5%;">Ф</th> 
+          <th class="help-title" title="Спеціальність(напрям) / Спеціалізація" style="width: 24%">Спец.</th> 
+          <th class="help-title" title="Вступ за квотою">Кв</th> 
+          <th class="help-title" title="Подано оригінали документів">Д</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/715769">267</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> К </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 270</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>156</strong></span> </td> 
+          <td data-header="Заг.бал">194.750</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»" target="_blank" href="/rate2020/univer/174">КПІ ім. Ігоря Сікорського</a> </td> 
+          <td title="Факультет інформатики та обчислювальної техніки" class="" data-header="Факультет/Інститут"> ФІОТ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">121</span> Інженерія програмного забезпечення
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/719123">439</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> К </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 555</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>200</strong></span> </td> 
+          <td data-header="Заг.бал">189.800</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Історія України">Історія України</span> 
+            </dt> 
+            <dd> <strong>183</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Інститут права" class="" data-header="Факультет/Інститут"> ІП </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">081</span> Право
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/705046">87</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> К </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 150</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>76</strong></span> </td> 
+          <td data-header="Заг.бал">194.300</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Факультет психології" class="" data-header="Факультет/Інститут"> ФП </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">053</span> Психологія
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/744964">121</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> К </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 50</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>12</strong></span><br><span data-stooltip="Кількість місць на контракт">К 38</span> </td> 
+          <td data-header="Заг.бал">194.400</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Національний університет &quot;Києво-Могилянська академія&quot;" target="_blank" href="/rate2020/univer/79">НаУКМА</a> </td> 
+          <td title="Факультет соціальних наук і соціальних технологій" class="" data-header="Факультет/Інститут"> ФСНіСТ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">291</span> Міжнародні відносини, суспільні комунікації та регіональні студії
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/717642">165</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> К </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 125</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>45</strong></span> </td> 
+          <td data-header="Заг.бал">189.550</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Історія України">Історія України</span> 
+            </dt> 
+            <dd> <strong>183</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Інститут журналістики" class="" data-header="Факультет/Інститут"> ІЖ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">061</span> Журналістика
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/683627">70</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> К </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 130</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>26</strong></span> </td> 
+          <td data-header="Заг.бал">194.400</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Інститут міжнародних відносин" class="" data-header="Факультет/Інститут"> ІМВ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">292</span> Міжнародні економічні відносини
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/732916">147</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> К </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 100</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>30</strong></span> </td> 
+          <td data-header="Заг.бал">194.400</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Інститут міжнародних відносин" class="" data-header="Факультет/Інститут"> ІМВ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">291</span> Міжнародні відносини, суспільні комунікації та регіональні студії
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/732914">232</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> 1 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 100</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>44</strong></span><br><span data-stooltip="Кількість місць на контракт">К 56</span> </td> 
+          <td data-header="Заг.бал">182.400</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>191</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>180</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>181</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Факультет інформаційних технологій" class="" data-header="Факультет/Інститут"> ФІТ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">125</span> Кібербезпека
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/683628">83</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> 1 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 140</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>39</strong></span> </td> 
+          <td data-header="Заг.бал">194.400</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Інститут міжнародних відносин" class="" data-header="Факультет/Інститут"> ІМВ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">292</span> Міжнародні економічні відносини
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-9" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-9"> <span class="attr" data-stooltip="Рекомендовано (бюджет)">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-9"> 
+           <div class="">
+            <small>Рекомендовано (бюджет)</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-9"> <a target="_blank" href="/rate2020/direction/675589">36</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-9"> 2 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 100</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>48</strong></span> </td> 
+          <td data-header="Заг.бал">194.800</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Факультет комп`ютерних наук та кібернетики" class="" data-header="Факультет/Інститут"> ФКНК </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">121</span> Інженерія програмного забезпечення
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/726274">411</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> 2 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 100</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>19</strong></span> </td> 
+          <td data-header="Заг.бал">182.400</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>191</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>180</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>181</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Факультет інформаційних технологій" class="" data-header="Факультет/Інститут"> ФІТ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">121</span> Інженерія програмного забезпечення
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/698753">111</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> 3 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 60</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>50</strong></span><br><span data-stooltip="Кількість місць на контракт">К 10</span> </td> 
+          <td data-header="Заг.бал">194.400</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Національний університет &quot;Києво-Могилянська академія&quot;" target="_blank" href="/rate2020/univer/79">НаУКМА</a> </td> 
+          <td title="Факультет інформатики" class="" data-header="Факультет/Інститут"> ФІ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">121</span> Інженерія програмного забезпечення
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-9" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-9"> <span class="attr" data-stooltip="Рекомендовано (бюджет)">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-9"> 
+           <div class="">
+            <small>Рекомендовано (бюджет)</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-9"> <a target="_blank" href="/rate2020/direction/674580">9</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-9"> 3 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 390</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>187</strong></span><br><span data-stooltip="Кількість місць на контракт">К 203</span> </td> 
+          <td data-header="Заг.бал">184.650</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література (ЗНО)">Українська мова та література (ЗНО)</span> 
+            </dt> 
+            <dd> <strong>191</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика (ЗНО)">Математика (ЗНО)</span> 
+            </dt> 
+            <dd> <strong>180</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова (ЗНО)">Іноземна мова (ЗНО)</span> 
+            </dt> 
+            <dd> <strong>181</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Національний авіаційний університет" target="_blank" href="/rate2020/univer/183">НАУ</a> </td> 
+          <td title="Факультет кібербезпеки, комп`ютерної та програмної інженерії" class="" data-header="Факультет/Інститут"> ФККПІ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">125</span> Кібербезпека
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/718617">47</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> 4 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 50</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>30</strong></span> </td> 
+          <td data-header="Заг.бал">194.750</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Економічний факультет" class="" data-header="Факультет/Інститут"> ЕФ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">051</span> Економіка
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-12" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-12"> <span class="attr" data-stooltip="Рекомендовано (контракт)">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-12"> 
+           <div class="">
+            <small>Рекомендовано (контракт)</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-12"> <a target="_blank" href="/rate2020/direction/728911">264</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-12"> 4 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 260</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>91</strong></span><br><span data-stooltip="Кількість місць на контракт">К 169</span> </td> 
+          <td data-header="Заг.бал">184.650</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>191</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>180</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>181</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Національний авіаційний університет" target="_blank" href="/rate2020/univer/183">НАУ</a> </td> 
+          <td title="Факультет кібербезпеки, комп`ютерної та програмної інженерії" class="" data-header="Факультет/Інститут"> ФККПІ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">121</span> Інженерія програмного забезпечення
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/675706">373</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> 5 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 180</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>107</strong></span> </td> 
+          <td data-header="Заг.бал">183.000</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>191</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>180</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>181</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»" target="_blank" href="/rate2020/univer/174">КПІ ім. Ігоря Сікорського</a> </td> 
+          <td title="Фізико-технічний інститут" class="" data-header="Факультет/Інститут"> ФТІ </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">125</span> Кібербезпека
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+         <tr class="application-status application-status-6" style=""> 
+          <td title="Бакалавр" data-header="ОКР" class="mobile-text-right help-title" style="text-align: center"> 
+           <div style="margin-bottom: -4px;">
+             Б 
+           </div> 
+           <div style="">
+            <span class="degree-drop degree-drop-2"></span><span class="degree-drop degree-drop-2"></span>
+           </div> </td> 
+          <td data-header="ПІБ" class="application-status-cell-name-6"> <span class="attr" data-stooltip="Допущено">Поліщук О. В.</span> </td> 
+          <td class="application-status-cell-status-6"> 
+           <div class="">
+            <small>Допущено</small>
+           </div> </td> 
+          <td data-header="№" class="application-status-cell-number-6"> <a target="_blank" href="/rate2020/direction/764311">162</a> </td> 
+          <td data-header="Пріоритет" class="application-status-cell-priority-6"> 5 </td> 
+          <td data-header="Місця"> <span data-stooltip="Загальна кількість місць">ВМ 110</span><br><span data-stooltip="Максимальна кількість бюджетних місць">БМ<sub>MAX</sub> <strong>93</strong></span> </td> 
+          <td data-header="Заг.бал">194.800</td> 
+          <td data-header="СБО">11.1</td> 
+          <td data-header="Складові заг. балу"> 
+           <dl class="dl-horizontal"> 
+            <dt class="font400"> <span class="help-title" title="Українська мова та література">Українська мова та література</span> 
+            </dt> 
+            <dd> <strong>194</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Математика">Математика</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Іноземна мова">Іноземна мова</span> 
+            </dt> 
+            <dd> <strong>195</strong> 
+            </dd> 
+            <dt class="font400"> <span class="help-title" title="Середній бал документа про освіту">СБО</span> 
+            </dt> 
+            <dd> <strong>11.1</strong> 
+            </dd> 
+           </dl> </td> 
+          <td data-header="ВНЗ"> <a title="Київський національний університет імені Тараса Шевченка" target="_blank" href="/rate2020/univer/41">КНУТШ</a> </td> 
+          <td title="Факультет комп`ютерних наук та кібернетики" class="" data-header="Факультет/Інститут"> ФКНК </td> 
+          <td data-header="Спец."> 
+           <div>
+            <span title="Шифр спеціальності" class="">113</span> Прикладна математика
+           </div> 
+           <div class="" title="Спеціалізація"></div> </td> 
+          <td> — </td> 
+          <td data-header="Оригінали" class=""> — </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> <!--<div class="card shadow-z-2 white-bg">
+    <div class="card-content">
+        <div class="secondary-text">
+            <h3>(N1..N2..N3)</h3>
+        </div>
+        <div>
+            <h3  style="display: inline"><span class="secondary-text">N1</span></h3>: кількість оригіналів перед заявою абітурієнта +1
+        </div>
+        <div>
+            <h3  style="display: inline"><span class="secondary-text">N2</span></h3>: рейтингове місце абітурієнта за конкурсним балом без урахування <span class="rec-other">рожевих</span> та <span class="adm-other">червоних</span> заяв(абітурієнти, які рекомендовані/зараховані на інший напрям)
+        </div>
+        <div>
+            <h3 style="display: inline"><span class="secondary-text">N3</span></h3>: рейтингове місце абітурієнта за конкурсним балом із урахуванням <span class="rec-other">рожевих</span> та <span class="adm-other">червоних</span> заяв
+        </div>
+    </div>
+</div>!--> <!--<div class="card shadow-z-2 white-bg">
+    <div class="card-content">
+      <div>
+            Увага! Номер у рейтинговому списку за <i>Конкурсним балом з ур. Ц,ПК,ПЧ</i> обчислюється з урахуванням квоти ПК <strong>20%</strong>
+            для всіх напрямів!
+        </div>
+        <div>
+            Квота за цільовим направленням не встановлюється (оскільки у нас немає цієї інформацції).
+        </div>
+        </div>
+</div>!-->
+    </div> 
+    <div class="card" id="js-show-more" style="display: none"> 
+     <div class="card-content"> 
+      <div class="text-center"> <button id="js-show-more-button" class="btn btn-info">Показати наступні заяви</button> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="timeline-wrapper" style="display: none;" id="search-loader"> 
+     <div class="timeline-item card-content timeline-item--search-summary shadow-z-2" style="margin-bottom: 16px"> 
+      <div class="animated-background"> 
+       <div class="background-masker item-1"></div> 
+       <div class="background-masker item-2"></div> 
+       <div class="background-masker item-3"></div> 
+       <div class="background-masker item-4"></div> 
+       <div class="background-masker item-5"></div> 
+       <div class="background-masker item-6"></div> 
+       <div class="background-masker item-7"></div> 
+       <div class="background-masker item-8"></div> 
+       <div class="background-masker item-9"></div> 
+       <div class="background-masker item-10"></div> 
+       <div class="background-masker item-11"></div> 
+       <div class="background-masker item-12"></div> 
+       <div class="background-masker item-13"></div> 
+       <div class="background-masker item-14"></div> 
+       <div class="background-masker item-15"></div> 
+       <div class="background-masker item-16"></div> 
+      </div> 
+     </div> 
+     <div class="timeline-item card-content timeline-item--search-table shadow-z-2 hidden-xs" style="margin-bottom: 32px"> 
+      <div class="animated-background"> 
+       <div class="background-masker item-1"></div> 
+       <div class="background-masker item-2"></div> 
+       <div class="background-masker item-3"></div> 
+       <div class="background-masker item-4"></div> 
+       <div class="background-masker item-5"></div> 
+       <div class="background-masker item-6"></div> 
+       <div class="background-masker item-7"></div> 
+       <div class="background-masker item-8"></div> 
+       <div class="background-masker item-9"></div> 
+       <div class="background-masker item-10"></div> 
+       <div class="background-masker item-11"></div> 
+       <div class="background-masker item-12"></div> 
+       <div class="background-masker item-13"></div> 
+       <div class="background-masker item-14"></div> 
+       <div class="background-masker item-15"></div> 
+       <div class="background-masker item-16"></div> 
+       <div class="background-masker item-17"></div> 
+      </div> 
+     </div> 
+    </div> <!--<div class="text-center card" style="display: none" id="search-loader">
+    <div class="white-bg shadow-z-2 loader-text secondary-text">
+        <div id="loading" class="spin-1"></div>
+        Зачекайте...
+    </div>
+</div>!--> 
+    <div style="display: none" id="searchResult" class=""> 
+    </div> 
+   </div> 
+  </div> 
+  <footer class="footer"> 
+   <div class="main-content"> 
+    <div class="content-left"> 
+     <div class="copyright small">
+       © 2012 - 2020 <a class="copy-link" href="">abit-poisk.org.ua</a> 
+     </div> 
+     <div class="small-text">
+       Сайт використовує інформацію, взяту з ресурів <a href="https://vstup.edbo.gov.ua" target="_blank">Vstup.edbo.gov.ua</a>, <a href="http://vstup.info" target="_blank">ІС Конкурс</a> та <a href="https://vstup.osvita.ua" target="_blank">Vstup.osvita.ua</a> 
+     </div> 
+    </div> 
+    <ul class="inline-navigation small content-right"> 
+     <li><a href="/gbook">Гостьова книга</a></li> 
+     <li><a href="/feedback">Контакти</a></li> 
+     <li><a href="/terms">Умови використання</a></li> 
+     <li><a href="/rate2020/global/">Широкий конкурс</a></li> 
+     <li><a href="/stat/">Статистика минулих років</a></li> 
+     <li><a href="/score2016">Прохідні бали 2016</a></li> 
+     <li><a href="/top-universities/">Топ ВНЗ 2015</a></li> 
+    </ul> 
+    <div class="clearfix"></div> 
+   </div> 
+  </footer> <!--LiveInternet counter--> 
+  <script type="text/javascript"><!--
+        document.write("<a style='display:none' href='http://www.liveinternet.ru/click' " +
+            "target=_blank><img src='//counter.yadro.ru/hit?t24.1;r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+            ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";" + Math.random() +
+            "' alt='' title='LiveInternet: показано число посетителей за" +
+            " сегодня' " +
+            "border='0' width='1' height='1'><\/a>")
+        //--></script><a style="display:none" href="http://www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/hit?t24.1;r;s1920*1080*24;uhttps%3A//abit-poisk.org.ua/%23search-%25D0%259F%25D0%25BE%25D0%25BB%25D1%2596%25D1%2589%25D1%2583%25D0%25BA+%25D0%259E.+%25D0%2592.+2020+11.1;0.7998619477903361" alt="" title="LiveInternet: показано число посетителей за сегодня" border="0" width="1" height="1"></a><!--/LiveInternet--> <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+        ym(21411352, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script> 
+  <noscript>
+   <div>
+    <img src="https://mc.yandex.ru/watch/21411352" style="position:absolute; left:-9999px;" alt="">
+   </div>
+  </noscript> <!-- /Yandex.Metrika counter --> <!-- <noscript>
+        <div><img src="//mc.yandex.ru/watch/21411352" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript> --> 
+  <script type="text/javascript" src="/assets/source/js/modules/jquery-cookie.js"></script> 
+  <script type="text/javascript" src="/assets/dist/main.1cd44eb849a5681da6c6.js?v=2"></script> 
+  <script type="text/javascript" src="/assets/source/js/modules/searchStatements.js?v=6"></script> 
+  <script type="text/javascript" src="/assets/source/js/ba.js"></script> 
+  <div class="modal" id="vstup-osvita-corrupted" tabindex="-1" role="dialog"> 
+   <div class="modal-dialog modal-lg" role="document"> 
+    <div class="modal-content"> 
+     <div class="modal-header"> <button type="button" class="close" style="font-size: 41px;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+      <h4 class="display-1 modal-title">Увага</h4> 
+     </div> 
+     <div class="modal-body font400">
+       Адміністратори Vstup.osvita.ua випадковим чином спотворюють рейтингові списки (є <a target="_blank" href="/vstup-osvita-ua-corrupted.png">фото</a> та відеофіксація спотворених списків) що є порушенням розділу 16 умов прийому: <strong>Забезпечення відкритості та прозорості під час проведення прийому до закладів вищої освіти</strong>. 
+      <div style="color:#388e3c">
+       <strong>На даний момент списки на Абіт-пошуку виправлені.</strong>
+      </div> 
+     </div> 
+     <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Закрити </button> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6880298536449575&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1615834435&amp;plat=1%3A8%2C2%3A8%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fabit-poisk.org.ua%2F%23search-%25D0%259F%25D0%25BE%25D0%25BB%25D1%2596%25D1%2589%25D1%2583%25D0%25BA%2B%25D0%259E.%2B%25D0%2592.%2B2020%2B11.1&amp;ea=0&amp;flash=0&amp;pra=5&amp;wgl=1&amp;dt=1615834434982&amp;bpp=18&amp;bdt=455&amp;idt=135&amp;shv=r20210309&amp;cbv=r20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=6829036755382&amp;frm=20&amp;pv=2&amp;ga_vid=713278974.1615834435&amp;ga_sid=1615834435&amp;ga_hid=1837713358&amp;ga_fc=0&amp;u_tz=120&amp;u_his=2&amp;u_java=0&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1920&amp;u_cd=24&amp;u_nplug=3&amp;u_nmime=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=912&amp;bih=911&amp;scr_x=0&amp;scr_y=0&amp;eid=42530672&amp;oid=3&amp;pvsid=4134007612280581&amp;pem=831&amp;rx=0&amp;eae=2&amp;fc=1920&amp;brdim=10%2C10%2C10%2C10%2C1920%2C0%2C945%2C1060%2C929%2C928&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=9216&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=220" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_3969400803905" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20210309/r20190131/zrt_lookup.html#" data-ad-client="ca-pub-6880298536449575" style="display: none;"></iframe>
+  <ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background-color: white !important;" data-adsbygoogle-status="done" aria-hidden="true" data-vignette-loaded="true"><ins id="aswift_3_expand" style="display: inline-table !important; border: none !important; height: 100vh !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; width: 100vw !important; background-color: transparent !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_3_anchor" style="display: block !important; border: none !important; height: 100vh !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; width: 100vw !important; background-color: transparent !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_3" name="" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/html/r20210309/r20190131/zrt_lookup.html?fsb=1#RS-0-&amp;adk=1812271808&amp;client=ca-pub-6880298536449575&amp;fa=8&amp;no_strg=false&amp;ifi=4&amp;uci=a!4&amp;xpc=TmjsGU8ZJv&amp;p=https%3A//abit-poisk.org.ua" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" data-google-container-id="a!4" data-google-query-id="CNWqw6v8su8CFcermgodcvgGnA" data-load-complete="true"></iframe></ins></ins></ins>
+ </body>
+</html>

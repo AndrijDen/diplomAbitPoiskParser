@@ -1,17 +1,34 @@
 package main;
 
+import com.gargoylesoftware.htmlunit.*;
+import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import database.repositories.StudentRepository;
 import database.repositories.UniversityRepository;
 import models.University;
+import org.apache.commons.logging.LogFactory;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import parser.Parser;
 
 import java.io.IOException;
 import java.sql.*;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 public class Main {
 
-    public static void main(String[] args) throws SQLException, ClassNotFoundException, IOException {
+    public static void main(String[] args) throws Exception {
         System.out.println("hello world");
         //        WORKING EXAMPLE
 //        TestSelect ts = new TestSelect();
@@ -38,8 +55,62 @@ public class Main {
 //        parser.parseStudentsFromDirectionPageByDirectionIds();
 
 //        Student Statement Parser test
+//        Parser parser = new Parser();
+//        parser.parseStudentStatementsFromStudentInfoPage();
+
+//        Try HTMLUNIT
+//        final WebClient webClient = new WebClient(BrowserVersion.BEST_SUPPORTED);
+//        webClient.getOptions().setJavaScriptEnabled(true);
+//        webClient.getOptions().setRedirectEnabled(true);
+//        webClient.getOptions().setThrowExceptionOnScriptError(false);
+//        webClient.getOptions().setCssEnabled(false);
+//        webClient.getOptions().setUseInsecureSSL(true);
+//        webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
+//        webClient.getCookieManager().setCookiesEnabled(true);
+//        webClient.setAjaxController(new NicelyResynchronizingAjaxController());
+//        HtmlPage myPage = ((HtmlPage) webClient.getPage("https://abit-poisk.org.ua/#search-%D0%9F%D0%BE%D0%BB%D1%96%D1%89%D1%83%D0%BA+%D0%9E.+%D0%92.+2020+11.1"));
+//        Thread.sleep(2000);
+//        webClient.waitForBackgroundJavaScript(1000 * 1000);
+//        Document doc = Jsoup.parse(myPage.asXml());
+//        System.out.println("qweqwe" + doc);
+//        String theContent = myPage.asXml();
+//        System.out.println(theContent);
+
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\diplom\\Libraries\\ChromeDriver\\chromedriver.exe");
+//        WebDriver driver = new ChromeDriver();
+
+//        Try connect PhantomJSDriver
+//        DesiredCapabilities DesireCaps = new DesiredCapabilities();
+//        DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "C://phantomjs.exe");
+//        WebDriver driver = new PhantomJSDriver(DesireCaps);
+
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\diplom\\Libraries\\ChromeDriver\\chromedriver.exe");
+//        WebDriver driver = new ChromeDriver();
+
+
+//        driver.get("https://abit-poisk.org.ua/#search-%D0%9F%D0%BE%D0%BB%D1%96%D1%89%D1%83%D0%BA+%D0%9E.+%D0%92.+2020+11.1");
+//        WebDriverWait wait = new WebDriverWait(driver, 10);
+//        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("table")));
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        String pageSource = driver.getPageSource();
+//        System.out.println("pageSource" + pageSource);
+//
+//        Document doc = Jsoup.parse(pageSource);
+//        System.out.println("qweqwe" + doc);
+
+        //        Student Parser test
+//        Parser parser = new Parser();
+//        parser.parseStudentStatementsFromStudentInfoPage();
+
+//        System.out.println("qweqwe" + parser.readStudentStatementsTestPage());
+
+
+//        Parse student and studentStatement data
         Parser parser = new Parser();
+        parser.parseStudentsFromDirectionPageByDirectionIds();
         parser.parseStudentStatementsFromStudentInfoPage();
 
+
     }
+
 }
