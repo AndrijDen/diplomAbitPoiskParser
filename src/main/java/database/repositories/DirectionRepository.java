@@ -21,12 +21,12 @@ public class DirectionRepository {
         return listFrom(ps.executeQuery());
     }
 
-    public List<Direction> getById(int id) throws SQLException {
+    public Direction getById(int id) throws SQLException {
         Connection c = DBConnector.shared.getConnect();
         PreparedStatement ps = c.prepareStatement(selectById);
         ps.setInt(1, id);
         List<Direction> result = listFrom(ps.executeQuery());
-        return (result.isEmpty()) ? null : result;
+        return (result.isEmpty()) ? null : result.get(0);
     }
 
     private List<Direction> listFrom(ResultSet resultSet) throws SQLException {

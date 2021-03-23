@@ -26,12 +26,12 @@ public class StudentRepository {
         return listFrom(ps.executeQuery());
     }
 
-    public List<Student> getById(int id) throws SQLException {
+    public Student getById(int id) throws SQLException {
         Connection c = DBConnector.shared.getConnect();
         PreparedStatement ps = c.prepareStatement(selectById);
         ps.setInt(1, id);
         List<Student> result = listFrom(ps.executeQuery());
-        return (result.isEmpty()) ? null : result;
+        return (result.isEmpty()) ? null : result.get(0);
     }
 
     public boolean insert(Student student) throws SQLException {

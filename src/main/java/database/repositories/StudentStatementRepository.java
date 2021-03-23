@@ -22,12 +22,12 @@ public class StudentStatementRepository {
         return listFrom(ps.executeQuery());
     }
 
-    public List<StudentStatement> getById(int id) throws SQLException {
+    public StudentStatement getById(int id) throws SQLException {
         Connection c = DBConnector.shared.getConnect();
         PreparedStatement ps = c.prepareStatement(selectById);
         ps.setInt(1, id);
         List<StudentStatement> result = listFrom(ps.executeQuery());
-        return (result.isEmpty()) ? null : result;
+        return (result.isEmpty()) ? null : result.get(0);
     }
 
     public boolean insert(StudentStatement student) throws SQLException {

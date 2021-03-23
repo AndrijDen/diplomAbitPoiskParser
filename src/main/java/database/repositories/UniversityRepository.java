@@ -21,12 +21,12 @@ public class UniversityRepository {
         return listFrom(ps.executeQuery());
     }
 
-    public List<University> getById(int id) throws SQLException {
+    public University getById(int id) throws SQLException {
         Connection c = DBConnector.shared.getConnect();
         PreparedStatement ps = c.prepareStatement(selectById);
         ps.setInt(1, id);
         List<University> result = listFrom(ps.executeQuery());
-        return (result.isEmpty()) ? null : result;
+        return (result.isEmpty()) ? null : result.get(0);
     }
 
     private List<University> listFrom(ResultSet resultSet) throws SQLException {

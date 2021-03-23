@@ -81,7 +81,7 @@ public class Parser {
         ArrayList<ZnoMark> znoMarks = new ArrayList<ZnoMark>();
         for (Element markItem : marksBlock.select("li")) {
             if (znoMarks.size() < 3) {
-                String markName = markItem.text().substring(0, markItem.text().indexOf(":"));
+                String markName = getMarkName(markItem.text());
                 double markValue = Double.parseDouble(markItem.select("strong").text());
                 znoMarks.add(new ZnoMark(markName, markValue));
             }
@@ -89,12 +89,19 @@ public class Parser {
         return znoMarks.toArray(new ZnoMark[0]);
     }
 
+    private String getMarkName(String str) {
+        if (str.contains(" (ЗНО)")) {
+            return str.substring(0, str.indexOf(" (ЗНО)"));
+        }
+        return str.substring(0, str.indexOf(":"));
+    }
+
     public void parseStudentStatementsFromStudentInfoPage() throws SQLException {
         StudentRepository studentsRepository = new StudentRepository();
         List<Student> studentsList = studentsRepository.getAll();
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\diplom\\Libraries\\ChromeDriver\\chromedriver.exe");
 
-      for (Student student: studentsList) {
+        for (Student student: studentsList) {
           String studentInfoUrl = baseURL + student.getSearchLink();
           WebDriver driver = new ChromeDriver();
           driver.get(studentInfoUrl);
@@ -119,19 +126,20 @@ public class Parser {
                   getStudentStatementFromHtmlAndInsertToDb(higherPrioritiesData.first(), student.getId());
           }
           driver.close();
-      }
+        }
     }
 
     private void getStudentStatementFromHtmlAndInsertToDb(Element studentHtml, int studentId) throws SQLException {
-        double grade = Double.parseDouble(studentHtml.select("tr > td:nth-child(7)").text());
-        int priority = Integer.parseInt(studentHtml.select("tr > td:nth-child(5)").text());
-        String universityShortName = studentHtml.select("tr > td:nth-child(10) a").text();
-        int directionDataId = Integer.parseInt(studentHtml.select("tr > td:nth-child(12) span").text());
-        StudentStatement studentStatement = new StudentStatement(0, grade, priority, universityShortName, directionDataId, studentId);
+        if (studentHtml != null) {
+            double grade = Double.parseDouble(studentHtml.select("tr > td:nth-child(7)").text());
+            int priority = Integer.parseInt(studentHtml.select("tr > td:nth-child(5)").text());
+            String universityShortName = studentHtml.select("tr > td:nth-child(10) a").text();
+            int directionDataId = Integer.parseInt(studentHtml.select("tr > td:nth-child(12) span").text());
+            StudentStatement studentStatement = new StudentStatement(0, grade, priority, universityShortName, directionDataId, studentId);
 
-        System.out.print("studentStatement" + studentStatement);
-
-        studentStatementRepository.insert(studentStatement);
+//            System.out.print("studentStatement" + studentStatement);
+            studentStatementRepository.insert(studentStatement);
+        }
     }
 
     public void writeStudentStatementsTestPage(String str)
