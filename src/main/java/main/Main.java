@@ -113,5 +113,7 @@ public class Main {
 //        parser.parseStudentsFromDirectionPageByDirectionIds();
 //        parser.parseStudentStatementsFromStudentInfoPage();
 
+        TestGraph tg = new TestGraph();
+        tg.testJgraphtLib();
     }
 }
