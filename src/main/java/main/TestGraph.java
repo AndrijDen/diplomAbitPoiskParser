@@ -23,7 +23,7 @@ public class TestGraph {
         System.out.println(graph.getGraph());
         List cycles = graph.findSimpleCycles();
 //        findOptimalRes(cycles);
-        System.out.println(cycles);
+//        System.out.println(cycles);
 
         Graph<String, RelationshipEdge> directedGraph = (Graph<String, RelationshipEdge>) cycles.get(0);
 
