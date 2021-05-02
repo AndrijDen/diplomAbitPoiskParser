@@ -1,27 +1,37 @@
 package main;
 
 import graphLogic.RelationshipEdge;
+import models.StudentTransitionData;
 import org.jgrapht.*;
 import org.jgrapht.alg.connectivity.*;
 import org.jgrapht.alg.cycle.Cycles;
+import org.jgrapht.alg.cycle.HierholzerEulerianCycle;
 import org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles;
 import org.jgrapht.alg.interfaces.ShortestPathAlgorithm.*;
 import org.jgrapht.alg.interfaces.*;
 import org.jgrapht.alg.shortestpath.*;
 import org.jgrapht.graph.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
-    // Try use JGraphT Lib - dont have graph with labeled edges
+// Try use JGraphT Lib - dont have graph with labeled edges
 
 public class TestGraph {
+
+    private ArrayList<String> usedNames = new ArrayList();
+
     public void testJgraphtLib() {
 //        testFindCycles();
-        testFindStrongConnectivity();
+//        testFindStrongConnectivity();
+        testFindEulCycle();
+        EulerianCycleAlgorithm
+    }
 
+    public void testFindEulCycle() {
+
+        EulerianCycleAlgorithm strongConGraphs = new HierholzerEulerianCycle(gr5ML());
+
+        System.out.println("GetStrConComp" + strongConGraphs);
     }
 
     public void testFindStrongConnectivity() {
@@ -31,6 +41,13 @@ public class TestGraph {
         StrongConnectivityAlgorithm strongConGraphs = new  KosarajuStrongConnectivityInspector(grTestFindingStrongConnectivitynoLable());
 
         System.out.println("GetStrConComp" + strongConGraphs.getStronglyConnectedComponents());
+        findAllCycles(strongConGraphs.getStronglyConnectedComponents());
+    }
+
+    public void findStrongConnectedGraphs(Graph graph) {
+        StrongConnectivityAlgorithm strongConGraphs = new  KosarajuStrongConnectivityInspector(graph);
+//        System.out.println("GetStrConComp" + strongConGraphs.getStronglyConnectedComponents());
+        findAllCycles(strongConGraphs.getStronglyConnectedComponents());
     }
 
     public void findAllCycles(List<Graph> strongConnectedGraphs) {
@@ -40,17 +57,73 @@ public class TestGraph {
 //
 //                Then form List of Data with student and university info
 //                List studInfoList;
+                System.out.println("cycles" + strongConnectedGraphs.get(i));
+                usedNames.clear();
+//                findCycles(strongConnectedGraphs.get(i));
             }
         }
     }
 
-    public void testFindCycles() {
-
-        SzwarcfiterLauerSimpleCycles graph = new SzwarcfiterLauerSimpleCycles(gr5M());
+    public void findCycles(Graph graphWithCycles) {
+        SzwarcfiterLauerSimpleCycles graph = new SzwarcfiterLauerSimpleCycles(graphWithCycles);
         List cycles = graph.findSimpleCycles();
-
         findOptimalRes(cycles);
         System.out.println("cycles" + cycles);
+        getStudentsTransitionsData(cycles, graphWithCycles);
+    }
+
+    public void testFindCycles() {
+//        SzwarcfiterLauerSimpleCycles graph = new SzwarcfiterLauerSimpleCycles(gr5M());
+        SzwarcfiterLauerSimpleCycles graph = new SzwarcfiterLauerSimpleCycles(gr5ML());
+        List cycles = graph.findSimpleCycles();
+
+//        findOptimalRes(cycles);
+        System.out.println("cycles" + cycles);
+//        getStudentsTransitionsData(cycles, gr5M());
+        getStudentsTransitionsData(cycles, gr5ML());
+    }
+
+    public List getStudentsTransitionsData(List<List> cycles, Graph graph) {
+        List studsTransitionData = new ArrayList();
+        for (int i = 0; i < cycles.size(); i++) {
+            List<StudentTransitionData> studTransitionData = new ArrayList();
+            for (int j = 0; j < cycles.get(i).size(); j++) {
+                String fromUniversity = "";
+                String toUniversity = "";
+                if (j != cycles.get(i).size() - 1) {
+                    fromUniversity = cycles.get(i).get(j).toString();
+                    toUniversity = cycles.get(i).get(j+1).toString();
+                } else {
+                    System.out.println("here");
+                    fromUniversity = cycles.get(i).get(j).toString();
+                    toUniversity = cycles.get(i).get(0).toString();
+                }
+
+                StudentTransitionData studTransitData = new StudentTransitionData(getNames(graph.getAllEdges(fromUniversity, toUniversity)), fromUniversity, toUniversity);
+                studTransitionData.add(studTransitData);
+//                System.out.println(i + j + "studTransitionData" + studTransitionData);
+
+            }
+            studsTransitionData.add(studTransitionData);
+//            System.out.println("studTransitionData" + studTransitionData);
+        }
+        System.out.println("studsTransitionData" + studsTransitionData);
+        return studsTransitionData;
+    }
+
+    private String getNames(Set<RelationshipEdge> names) {
+        String name = "";
+        System.out.println("names" + names);
+        Iterator<RelationshipEdge> iterator = names.iterator();
+
+        while (iterator.hasNext()) {
+            name = iterator.next().getLabel();
+            if (!usedNames.contains(name)) {
+                usedNames.add(name);
+                break;
+            }
+        }
+        return name;
     }
 
     public List findOptimalRes(List cycles) {
@@ -68,7 +141,7 @@ public class TestGraph {
             if (elementsToRemove.size() > 0) {
                 Collections.reverse(elementsToRemove);
                 for (int k = 0; k < elementsToRemove.size(); k++) {
-                    System.out.println("elementsToRemove.get(k)" + elementsToRemove.get(k));
+//                    System.out.println("elementsToRemove.get(k)" + elementsToRemove.get(k));
 //                    Not working i dont know why
 //                    cycles.remove(elementsToRemove.get(k));
                     int q = elementsToRemove.get(k);
@@ -76,7 +149,6 @@ public class TestGraph {
                 }
                 elementsToRemove.clear();
             }
-
         }
 
         System.out.println("cycles test" + cycles);
@@ -401,6 +473,51 @@ public class TestGraph {
         directedGraph.addEdge("10", "6");
         directedGraph.addEdge("10", "12");
         directedGraph.addEdge("12", "0");
+
+        return directedGraph;
+    }
+    public Graph gr5ML() {
+        DirectedMultigraph<String, RelationshipEdge> directedGraph =
+                new DirectedMultigraph<String, RelationshipEdge>(RelationshipEdge.class);
+
+        directedGraph.addVertex("0");
+        directedGraph.addVertex("1");
+        directedGraph.addVertex("2");
+        directedGraph.addVertex("3");
+        directedGraph.addVertex("4");
+        directedGraph.addVertex("5");
+        directedGraph.addVertex("6");
+        directedGraph.addVertex("7");
+        directedGraph.addVertex("8");
+        directedGraph.addVertex("9");
+        directedGraph.addVertex("10");
+        directedGraph.addVertex("11");
+        directedGraph.addVertex("12");
+
+        directedGraph.addEdge("0", "1", new RelationshipEdge("0q"));
+        directedGraph.addEdge("1", "2", new RelationshipEdge("1q"));
+        directedGraph.addEdge("2", "3", new RelationshipEdge("2q"));
+        directedGraph.addEdge("1", "5", new RelationshipEdge("3q"));
+        directedGraph.addEdge("5", "1", new RelationshipEdge("4q"));
+        directedGraph.addEdge("5", "9", new RelationshipEdge("5q"));
+        directedGraph.addEdge("9", "2", new RelationshipEdge("6q"));
+        directedGraph.addEdge("2", "5", new RelationshipEdge("7q"));
+        directedGraph.addEdge("2", "4", new RelationshipEdge("8q"));
+        directedGraph.addEdge("4", "7", new RelationshipEdge("9q"));
+        directedGraph.addEdge("7", "4", new RelationshipEdge("10q"));
+        directedGraph.addEdge("4", "7", new RelationshipEdge("11q"));
+        directedGraph.addEdge("7", "4", new RelationshipEdge("12q"));
+        directedGraph.addEdge("4", "8", new RelationshipEdge("13q"));
+        directedGraph.addEdge("4", "8", new RelationshipEdge("14q"));
+        directedGraph.addEdge("8", "4", new RelationshipEdge("15q"));
+        directedGraph.addEdge("8", "11", new RelationshipEdge("16q"));
+        directedGraph.addEdge("11", "2", new RelationshipEdge("17q"));
+        directedGraph.addEdge("3", "6", new RelationshipEdge("18q"));
+        directedGraph.addEdge("6", "10", new RelationshipEdge("19q"));
+        directedGraph.addEdge("6", "10", new RelationshipEdge("20q"));
+        directedGraph.addEdge("10", "6", new RelationshipEdge("21q"));
+        directedGraph.addEdge("10", "12", new RelationshipEdge("22q"));
+        directedGraph.addEdge("12", "0", new RelationshipEdge("23q"));
 
         return directedGraph;
     }
