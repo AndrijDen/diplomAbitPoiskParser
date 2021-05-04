@@ -21,17 +21,15 @@ public class TestGraph {
     private ArrayList<String> usedNames = new ArrayList();
 
     public void testJgraphtLib() {
-//        testFindCycles();
+        testFindCycles();
 //        testFindStrongConnectivity();
-        testFindEulCycle();
-        EulerianCycleAlgorithm
     }
 
     public void testFindEulCycle() {
 
-        EulerianCycleAlgorithm strongConGraphs = new HierholzerEulerianCycle(gr5ML());
+//        EulerianCycleAlgorithm strongConGraphs = new HierholzerEulerianCycle(gr5ML());
 
-        System.out.println("GetStrConComp" + strongConGraphs);
+//        System.out.println("GetStrConComp" + strongConGraphs);
     }
 
     public void testFindStrongConnectivity() {
@@ -77,13 +75,14 @@ public class TestGraph {
         SzwarcfiterLauerSimpleCycles graph = new SzwarcfiterLauerSimpleCycles(gr5ML());
         List cycles = graph.findSimpleCycles();
 
+        findOptimalResFromCycles(cycles, gr5ML());
 //        findOptimalRes(cycles);
-        System.out.println("cycles" + cycles);
+//        System.out.println("cycles" + cycles);
 //        getStudentsTransitionsData(cycles, gr5M());
-        getStudentsTransitionsData(cycles, gr5ML());
+//        getStudentsTransitionsData(cycles, gr5ML());
     }
 
-    public List getStudentsTransitionsData(List<List> cycles, Graph graph) {
+    public List getStudentsTransitionsData(List<List<Integer>> cycles, Graph graph) {
         List studsTransitionData = new ArrayList();
         for (int i = 0; i < cycles.size(); i++) {
             List<StudentTransitionData> studTransitionData = new ArrayList();
@@ -126,6 +125,91 @@ public class TestGraph {
         return name;
     }
 
+    public List findOptimalResFromCycles(List<List> cycles, Graph graph) {
+
+        sortList(cycles);
+
+        ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
+
+        for (int i = 0; i < cycles.size()-1; i++) {
+            List element = cycles.get(i);
+            for (int j = i+1; j < cycles.size(); j++) {
+                if (isSubCycles( element, (List) cycles.get(j))) {
+                    elementsToRemove.add(j);
+                }
+            }
+
+            if (elementsToRemove.size() > 0) {
+                Collections.reverse(elementsToRemove);
+                for (int k = 0; k < elementsToRemove.size(); k++) {
+//                    System.out.println("elementsToRemove.get(k)" + elementsToRemove.get(k));
+//                    Not working i dont know why
+//                    cycles.remove(elementsToRemove.get(k));
+                    int q = elementsToRemove.get(k);
+                    cycles.remove(q);
+                }
+                elementsToRemove.clear();
+            }
+        }
+
+        System.out.println("findOptimalResFromCycles" + cycles);
+        return cycles;
+    }
+
+    static boolean isSubCycles(List Arr1, List Arr2)
+    {
+//        int arr1Length = Arr1.size();
+//        int arr2Length = Arr2.size();
+//        int i = 0, j = 0;
+//        while (i < arr1Length && j < arr2Length) {
+//            if (Arr1.get(i) == Arr2.get(j)) {
+//                i++;
+//                j++;
+//                // If array B is completely
+//                // traversed
+//                if (i == arr1Length || j == arr2Length)
+//                    return true;
+//            } else {
+//                return false;
+//            }
+//        }
+//        return false;
+
+        int arr1Length = Arr1.size();
+        int arr2Length = Arr2.size();
+        int i = 0, j = 0;
+        while (i < arr1Length && j < arr2Length) {
+            if (arr1Length == arr2Length) {
+
+            }
+
+//            if (Arr1.get(i) == Arr2.get(j)) {
+//                i++;
+//                j++;
+//                // If array B is completely
+//                // traversed
+//                if (i == arr1Length || j == arr2Length)
+//                    return true;
+//            } else {
+//                return false;
+//            }
+        }
+
+
+        return false;
+    }
+
+    public void sortList(List<List> cycles) {
+        cycles.sort((o1, o2) -> {
+            if (o1.size() >= o2.size()) {
+                return 1;
+            } else if (o1.size() < o2.size()) {
+                return -1;
+            }
+            return 0;
+        });
+    }
+
     public List findOptimalRes(List cycles) {
 
         ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
@@ -156,8 +240,7 @@ public class TestGraph {
         return cycles;
     }
 
-    static boolean isSubArray(List Arr1, List Arr2)
-    {
+    static boolean isSubArray(List Arr1, List Arr2) {
         int arr1Length = Arr1.size();
         int arr2Length = Arr2.size();
         int i = 0, j = 0;
