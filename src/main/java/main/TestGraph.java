@@ -19,6 +19,7 @@ import java.util.*;
 public class TestGraph {
 
     private ArrayList<String> usedNames = new ArrayList();
+    private ArrayList<List<String>> uniqueCycles = new ArrayList();
 
     public void testJgraphtLib() {
         testFindCycles();
@@ -129,16 +130,21 @@ public class TestGraph {
 
         sortList(cycles);
 
+        System.out.println("cycles" + cycles);
+
         ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
 
         for (int i = 0; i < cycles.size()-1; i++) {
             List element = cycles.get(i);
-            for (int j = i+1; j < cycles.size(); j++) {
-                if (isSubCycles( element, (List) cycles.get(j))) {
-                    elementsToRemove.add(j);
+            if (isUniqueCycle(element, graph)) {
+                for (int j = i+1; j < cycles.size(); j++) {
+                    if (isSameCycles( element, (List) cycles.get(j))) {
+                        elementsToRemove.add(j);
+                    }
                 }
+            } else {
+                elementsToRemove.add(i);
             }
-
             if (elementsToRemove.size() > 0) {
                 Collections.reverse(elementsToRemove);
                 for (int k = 0; k < elementsToRemove.size(); k++) {
@@ -156,43 +162,35 @@ public class TestGraph {
         return cycles;
     }
 
-    static boolean isSubCycles(List Arr1, List Arr2)
-    {
-//        int arr1Length = Arr1.size();
-//        int arr2Length = Arr2.size();
-//        int i = 0, j = 0;
-//        while (i < arr1Length && j < arr2Length) {
-//            if (Arr1.get(i) == Arr2.get(j)) {
-//                i++;
-//                j++;
-//                // If array B is completely
-//                // traversed
-//                if (i == arr1Length || j == arr2Length)
-//                    return true;
-//            } else {
-//                return false;
-//            }
-//        }
-//        return false;
+    private boolean isUniqueCycle(List<String> cycle, Graph graph) {
+        if (cycle.size() == 2) {
+            if(graph.getAllEdges(cycle.get(0), cycle.get(1)).size() == graph.getAllEdges(cycle.get(1), cycle.get(0)).size()) {
+                this.uniqueCycles.add(cycle);
+            }
+        } else {
 
+        }
+        return true;
+    }
+
+    static boolean isSameCycles(List Arr1, List Arr2)
+    {
         int arr1Length = Arr1.size();
         int arr2Length = Arr2.size();
         int i = 0, j = 0;
-        while (i < arr1Length && j < arr2Length) {
-            if (arr1Length == arr2Length) {
-
+        if (arr1Length == arr2Length) {
+            while (i < arr1Length && j < arr2Length) {
+                if (Arr1.get(i) == Arr2.get(j)) {
+                    i++;
+                    j++;
+                    // If array B is completely
+                    // traversed
+                    if (i == arr1Length || j == arr2Length)
+                        return true;
+                } else {
+                    return false;
+                }
             }
-
-//            if (Arr1.get(i) == Arr2.get(j)) {
-//                i++;
-//                j++;
-//                // If array B is completely
-//                // traversed
-//                if (i == arr1Length || j == arr2Length)
-//                    return true;
-//            } else {
-//                return false;
-//            }
         }
 
 
