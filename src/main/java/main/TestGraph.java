@@ -78,7 +78,7 @@ public class TestGraph {
 
         findOptimalResFromCycles(cycles, gr5ML());
 //        findOptimalRes(cycles);
-//        System.out.println("cycles" + cycles);
+        System.out.println("cycles" + cycles);
 //        getStudentsTransitionsData(cycles, gr5M());
 //        getStudentsTransitionsData(cycles, gr5ML());
     }
@@ -129,21 +129,23 @@ public class TestGraph {
     public List findOptimalResFromCycles(List<List> cycles, Graph graph) {
 
         sortList(cycles);
-
-        System.out.println("cycles" + cycles);
-
         ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
 
-        for (int i = 0; i < cycles.size()-1; i++) {
+        for (int i = 0; i <= cycles.size(); i++) {
             List element = cycles.get(i);
             if (isUniqueCycle(element, graph)) {
-                for (int j = i+1; j < cycles.size(); j++) {
-                    if (isSameCycles( element, (List) cycles.get(j))) {
-                        elementsToRemove.add(j);
+                if (i != cycles.size()) {
+                    for (int j = i + 1; j < cycles.size(); j++) {
+                        if (isSameCycles(element, (List) cycles.get(j))) {
+                            elementsToRemove.add(j);
+                        }
                     }
                 }
             } else {
                 elementsToRemove.add(i);
+                if (i == cycles.size() - 2) {
+                    i = i - 1;
+                }
             }
             if (elementsToRemove.size() > 0) {
                 Collections.reverse(elementsToRemove);
@@ -168,7 +170,13 @@ public class TestGraph {
                 this.uniqueCycles.add(cycle);
             }
         } else {
-
+            for (int i = 0; i < uniqueCycles.size(); i++) {
+                System.out.println("-------------------------cycle" + cycle + "++" + i);
+                if (cycle.contains(uniqueCycles.get(i).get(0)) && cycle.contains(uniqueCycles.get(i).get(1))) {
+                    System.out.println("here not unique");
+                    return false;
+                }
+            }
         }
         return true;
     }
