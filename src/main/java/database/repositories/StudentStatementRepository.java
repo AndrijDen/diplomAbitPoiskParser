@@ -52,7 +52,7 @@ public class StudentStatementRepository {
     private StudentStatement getItemFrom(ResultSet resultSet) throws SQLException {
         StudentStatement item = new StudentStatement();
         item.setId(resultSet.getInt("id"));
-        item.setGrade(resultSet.getInt("grade"));
+        item.setGrade(resultSet.getDouble("grade"));
         item.setPriority(resultSet.getInt("priority"));
         item.setUniversityShortName(resultSet.getString("universityShortName"));
         item.setDirectionDataId(resultSet.getInt("directionDataId"));

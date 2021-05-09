@@ -20,6 +20,7 @@ public class TestGraph {
 
     private ArrayList<String> usedNames = new ArrayList();
     private ArrayList<List<String>> uniqueCycles = new ArrayList();
+    private ArrayList<List<String>> cyclesWithEvenEdges = new ArrayList();
 
     public void testJgraphtLib() {
         testFindCycles();
@@ -77,19 +78,21 @@ public class TestGraph {
         List cycles = graph.findSimpleCycles();
 
         findOptimalResFromCycles(cycles, gr5ML());
+        addCycleIfEvenEdges(cycles);
 //        findOptimalRes(cycles);
         System.out.println("cycles" + cycles);
 //        getStudentsTransitionsData(cycles, gr5M());
-//        getStudentsTransitionsData(cycles, gr5ML());
+        getStudentsTransitionsData(cycles, gr5ML());
     }
 
-    public List getStudentsTransitionsData(List<List<Integer>> cycles, Graph graph) {
+    public List getStudentsTransitionsData(List<List<String>> cycles, Graph graph) {
         List studsTransitionData = new ArrayList();
         for (int i = 0; i < cycles.size(); i++) {
             List<StudentTransitionData> studTransitionData = new ArrayList();
             for (int j = 0; j < cycles.get(i).size(); j++) {
                 String fromUniversity = "";
                 String toUniversity = "";
+
                 if (j != cycles.get(i).size() - 1) {
                     fromUniversity = cycles.get(i).get(j).toString();
                     toUniversity = cycles.get(i).get(j+1).toString();
@@ -99,6 +102,13 @@ public class TestGraph {
                     toUniversity = cycles.get(i).get(0).toString();
                 }
 
+//                if (cycles.get(i).size() == 2 && (graph.getAllEdges(fromUniversity, toUniversity).size() == graph.getAllEdges(toUniversity, fromUniversity).size() && graph.getAllEdges(fromUniversity, toUniversity).size() > 1)) {
+//                    System.out.println("HAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAH");
+//                    StudentTransitionData studTransitData = new StudentTransitionData(getNames(graph.getAllEdges(fromUniversity, toUniversity)), fromUniversity, toUniversity);
+//                    List<StudentTransitionData> studTransitionDataDoubles = new ArrayList();
+//                    studTransitionDataDoubles.add(studTransitData);
+//                    studsTransitionData.add(studTransitionDataDoubles);
+//                }
                 StudentTransitionData studTransitData = new StudentTransitionData(getNames(graph.getAllEdges(fromUniversity, toUniversity)), fromUniversity, toUniversity);
                 studTransitionData.add(studTransitData);
 //                System.out.println(i + j + "studTransitionData" + studTransitionData);
@@ -107,7 +117,7 @@ public class TestGraph {
             studsTransitionData.add(studTransitionData);
 //            System.out.println("studTransitionData" + studTransitionData);
         }
-        System.out.println("studsTransitionData" + studsTransitionData);
+        System.out.println(studsTransitionData.size() + "studsTransitionData" + studsTransitionData);
         return studsTransitionData;
     }
 
@@ -131,16 +141,16 @@ public class TestGraph {
         sortList(cycles);
         ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
 
-        for (int i = 0; i <= cycles.size(); i++) {
+        for (int i = 0; i < cycles.size(); i++) {
             List element = cycles.get(i);
             if (isUniqueCycle(element, graph)) {
-                if (i != cycles.size()) {
+//                if (i != cycles.size()) {
                     for (int j = i + 1; j < cycles.size(); j++) {
                         if (isSameCycles(element, (List) cycles.get(j))) {
                             elementsToRemove.add(j);
                         }
                     }
-                }
+//                }
             } else {
                 elementsToRemove.add(i);
                 if (i == cycles.size() - 2) {
@@ -164,10 +174,28 @@ public class TestGraph {
         return cycles;
     }
 
+    private void addCycleIfEvenEdges(List<List> cycles) {
+        cycles.addAll(cyclesWithEvenEdges);
+    }
+
     private boolean isUniqueCycle(List<String> cycle, Graph graph) {
         if (cycle.size() == 2) {
+            int toEdgesSize = graph.getAllEdges(cycle.get(0), cycle.get(1)).size();
+            int fromEdgesSize = graph.getAllEdges(cycle.get(1), cycle.get(0)).size();
             if(graph.getAllEdges(cycle.get(0), cycle.get(1)).size() == graph.getAllEdges(cycle.get(1), cycle.get(0)).size()) {
-                this.uniqueCycles.add(cycle);
+                uniqueCycles.add(cycle);
+            }
+            if (toEdgesSize > 1 && toEdgesSize > 1) {
+                int cyclesSize = 0;
+                if (toEdgesSize < fromEdgesSize) {
+                    cyclesSize = toEdgesSize;
+                } else {
+                    cyclesSize = fromEdgesSize;
+                }
+                while (cyclesSize != 1) {
+                    cyclesWithEvenEdges.add(cycle);
+                    cyclesSize--;
+                }
             }
         } else {
             for (int i = 0; i < uniqueCycles.size(); i++) {
@@ -180,6 +208,7 @@ public class TestGraph {
         }
         return true;
     }
+
 
     static boolean isSameCycles(List Arr1, List Arr2)
     {

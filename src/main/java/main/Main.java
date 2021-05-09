@@ -6,9 +6,13 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import database.repositories.StudentRepository;
 import database.repositories.StudentStatementRepository;
 import database.repositories.UniversityRepository;
+import graphLogic.GetStudentTransitionDataFromGraph;
+import graphLogic.RelationshipEdge;
 import models.StudentStatement;
 import models.University;
 import org.apache.commons.logging.LogFactory;
+import org.jgrapht.Graph;
+import org.jgrapht.graph.DirectedMultigraph;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -113,7 +117,38 @@ public class Main {
 //        parser.parseStudentsFromDirectionPageByDirectionIds();
 //        parser.parseStudentStatementsFromStudentInfoPage();
 
-        TestGraph tg = new TestGraph();
-        tg.testJgraphtLib();
+//        TestGraph tg = new TestGraph();
+//        tg.testJgraphtLib();
+
+        StudentRepository stud = new StudentRepository();
+        System.out.println("+++++++" + stud.getByGrade(176.75));
+
+//        GetStudentTransitionDataFromGraph ggr = new GetStudentTransitionDataFromGraph();
+//        ggr.getStudentTransitionData(testDataFindingStrongConnectivitynoLable());
+    }
+
+    public static Graph testDataFindingStrongConnectivitynoLable() {
+        DirectedMultigraph<String, RelationshipEdge> directedGraph =
+                new DirectedMultigraph<String, RelationshipEdge>(RelationshipEdge.class);
+        // Test 1
+
+        directedGraph.addVertex("0");
+        directedGraph.addVertex("1");
+        directedGraph.addVertex("2");
+        directedGraph.addVertex("3");
+        directedGraph.addVertex("4");
+
+        directedGraph.addEdge("0", "1", new RelationshipEdge("0q"));
+        directedGraph.addEdge("1", "0", new RelationshipEdge("1q"));
+        directedGraph.addEdge("0", "1", new RelationshipEdge("2q"));
+        directedGraph.addEdge("1", "0", new RelationshipEdge("3q"));
+        directedGraph.addEdge("1", "0", new RelationshipEdge("4q"));
+        directedGraph.addEdge("1", "0", new RelationshipEdge("4q1"));
+        directedGraph.addEdge("1", "2", new RelationshipEdge("55"));
+        directedGraph.addEdge("2", "3", new RelationshipEdge("r1"));
+        directedGraph.addEdge("3", "4", new RelationshipEdge("r2"));
+
+        System.out.println("directedGraph" + directedGraph);
+        return directedGraph;
     }
 }

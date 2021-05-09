@@ -18,6 +18,7 @@ public class StudentRepository {
     private Gson gson = new Gson();
     private static final String selectAll = "SELECT * FROM students;";
     private static final String selectById = "SELECT * FROM students WHERE id=?;";
+    private static final String selectByGrade = "SELECT * FROM students WHERE grade=?;";
     private final static String insertInto = "INSERT INTO students(name, searchLink, priority, grade, direction_id, averageSchoolMark, znoMarks) VALUES(?,?,?,?,?,?,?);";
 
     public List<Student> getAll() throws SQLException {
@@ -32,6 +33,14 @@ public class StudentRepository {
         ps.setInt(1, id);
         List<Student> result = listFrom(ps.executeQuery());
         return (result.isEmpty()) ? null : result.get(0);
+    }
+
+    public List<Student> getByGrade(double grade) throws SQLException {
+        Connection c = DBConnector.shared.getConnect();
+        PreparedStatement ps = c.prepareStatement(selectByGrade);
+        ps.setDouble(1, grade);
+        List<Student> result = listFrom(ps.executeQuery());
+        return (result.isEmpty()) ? null : result;
     }
 
     public boolean insert(Student student) throws SQLException {
@@ -62,7 +71,7 @@ public class StudentRepository {
         item.setName(resultSet.getString("name"));
         item.setSearchLink(resultSet.getString("searchLink"));
         item.setPriority(resultSet.getInt("priority"));
-        item.setGrade(resultSet.getInt("grade"));
+        item.setGrade(resultSet.getDouble("grade"));
         item.setDirection_id(resultSet.getInt("direction_id"));
         item.setAverageSchoolMark(resultSet.getDouble("averageSchoolMark"));
         item.setZnoMarks(gson.fromJson(resultSet.getString("znoMarks"), ZnoMark[].class));
