@@ -1,6 +1,7 @@
 package database.repositories;
 
 import database.DBConnector;
+import models.Student;
 import models.StudentStatement;
 
 import java.sql.Connection;
@@ -14,6 +15,7 @@ public class StudentStatementRepository {
 
     private static final String selectAll = "SELECT * FROM studentStatements;";
     private static final String selectById = "SELECT * FROM studentStatements WHERE id=?;";
+    private static final String selectByGrade = "SELECT * FROM studentStatements WHERE grade=?;";
     private final static String insertInto = "INSERT INTO studentStatements(grade, priority, universityShortName, directionDataId, students_id) VALUES(?,?,?,?,?);";
 
     public List<StudentStatement> getAll() throws SQLException {
@@ -28,6 +30,14 @@ public class StudentStatementRepository {
         ps.setInt(1, id);
         List<StudentStatement> result = listFrom(ps.executeQuery());
         return (result.isEmpty()) ? null : result.get(0);
+    }
+
+    public List<StudentStatement> getByGrade(double grade) throws SQLException {
+        Connection c = DBConnector.shared.getConnect();
+        PreparedStatement ps = c.prepareStatement(selectByGrade);
+        ps.setDouble(1, grade);
+        List<StudentStatement> result = listFrom(ps.executeQuery());
+        return (result.isEmpty()) ? null : result;
     }
 
     public boolean insert(StudentStatement student) throws SQLException {
