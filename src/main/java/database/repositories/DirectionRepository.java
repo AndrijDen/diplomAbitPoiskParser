@@ -43,6 +43,8 @@ public class DirectionRepository {
         item.setName(resultSet.getString("name"));
         item.setDirectionId(resultSet.getInt("directionId"));
         item.setUniversity_id(resultSet.getInt("university_id"));
+        item.setName(resultSet.getString("facultyName"));
+        item.setName(resultSet.getString("facultyShortName"));
         return item;
     }
 }

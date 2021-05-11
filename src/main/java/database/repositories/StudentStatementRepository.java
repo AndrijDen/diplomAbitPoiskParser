@@ -16,7 +16,7 @@ public class StudentStatementRepository {
     private static final String selectAll = "SELECT * FROM studentStatements;";
     private static final String selectById = "SELECT * FROM studentStatements WHERE id=?;";
     private static final String selectByGrade = "SELECT * FROM studentStatements WHERE grade=?;";
-    private final static String insertInto = "INSERT INTO studentStatements(grade, priority, universityShortName, directionDataId, students_id) VALUES(?,?,?,?,?);";
+    private final static String insertInto = "INSERT INTO studentStatements(grade, priority, universityShortName, directionDataId, students_id, facultyShortName) VALUES(?,?,?,?,?,?);";
 
     public List<StudentStatement> getAll() throws SQLException {
         Connection c = DBConnector.shared.getConnect();
@@ -48,6 +48,7 @@ public class StudentStatementRepository {
         ps.setString(3, student.getUniversityShortName());
         ps.setInt(4, student.getDirectionDataId());
         ps.setInt(5, student.getStudents_id());
+        ps.setString(6, null);
         return ps.executeUpdate() == 1;
     }
 
@@ -67,6 +68,7 @@ public class StudentStatementRepository {
         item.setUniversityShortName(resultSet.getString("universityShortName"));
         item.setDirectionDataId(resultSet.getInt("directionDataId"));
         item.setStudents_id(resultSet.getInt("students_id"));
+        item.setFacultyShortName(resultSet.getString("facultyShortName"));
         return item;
     }
 }

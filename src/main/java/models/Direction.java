@@ -5,15 +5,19 @@ public class Direction {
     private String name;
     private int directionId;
     private int university_id;
+    private String facultyName;
+    private String facultyShortName;
 
-    public Direction(int id, String name, int directionId, int university_id) {
+    public Direction(){};
+
+    public Direction(int id, String name, int directionId, int university_id, String facultyName, String facultyShortName) {
         this.id = id;
         this.name = name;
         this.directionId = directionId;
         this.university_id = university_id;
+        this.facultyName = facultyName;
+        this.facultyShortName = facultyShortName;
     }
-
-    public Direction(){};
 
     public int getId() {
         return id;
@@ -29,6 +33,14 @@ public class Direction {
 
     public int getUniversity_id() {
         return university_id;
+    }
+
+    public String getFacultyName() {
+        return facultyName;
+    }
+
+    public String getFacultyShortName() {
+        return facultyShortName;
     }
 
     public void setId(int id) {
@@ -47,6 +59,14 @@ public class Direction {
         this.university_id = university_id;
     }
 
+    public void setFacultyName(String facultyName) {
+        this.facultyName = facultyName;
+    }
+
+    public void setFacultyShortName(String facultyShortName) {
+        this.facultyShortName = facultyShortName;
+    }
+
     @Override
     public String toString() {
         return "{" +
@@ -54,6 +74,8 @@ public class Direction {
                 ", name='" + name + '\'' +
                 ", directionId=" + directionId +
                 ", university_id=" + university_id +
+                ", facultyName='" + facultyName + '\'' +
+                ", facultyShortName='" + facultyShortName + '\'' +
                 '}';
     }
 }

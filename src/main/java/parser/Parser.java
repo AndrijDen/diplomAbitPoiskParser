@@ -96,6 +96,11 @@ public class Parser {
         return str.substring(0, str.indexOf(":"));
     }
 
+    public void getDirectionIdForStudentsStatementsDb() throws SQLException {
+        StudentStatementRepository  studStatRepository = new StudentStatementRepository();
+        List<StudentStatement> studStatList = studStatRepository.getAll();
+    }
+
     public void parseStudentStatementsFromStudentInfoPage() throws SQLException {
         StudentRepository studentsRepository = new StudentRepository();
         List<Student> studentsList = studentsRepository.getAll();
@@ -135,7 +140,8 @@ public class Parser {
             int priority = Integer.parseInt(studentHtml.select("tr > td:nth-child(5)").text());
             String universityShortName = studentHtml.select("tr > td:nth-child(10) a").text();
             int directionDataId = Integer.parseInt(studentHtml.select("tr > td:nth-child(12) span").text());
-            StudentStatement studentStatement = new StudentStatement(0, grade, priority, universityShortName, directionDataId, studentId);
+            String facultyShortName = studentHtml.select("tr > td:nth-child(11)").text();
+            StudentStatement studentStatement = new StudentStatement(0, grade, priority, universityShortName, directionDataId, studentId, facultyShortName);
 
 //            System.out.print("studentStatement" + studentStatement);
             studentStatementRepository.insert(studentStatement);

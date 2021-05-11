@@ -12,14 +12,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FullStudentDataRepository {
-    private static final String selectAllStudDataByGrade = "SELECT studStat.id AS studStatId, studStat.grade, studStat.priority, studName, studId,toUn, toDir, fromUn, fromDir FROM abitpoisk.studentStatements studStat \n" +
+    private static final String selectAllStudDataByGrade = "SELECT studStat.id AS studStatId, studStat.grade, studStat.priority, studName, studId,toUn, toDir, fromUn, fromDir FROM studentStatements studStat \n" +
             "INNER JOIN \n" +
-            "(SELECT unIn.shortName AS toUn, dirIn.directionId, dirIn.name AS toDir, dirIn.id AS directionSpecId FROM abitpoisk.university unIn INNER JOIN abitpoisk.direction dirIn ON unIn.id = dirIn.university_id) \n" +
+            "(SELECT unIn.shortName AS toUn, dirIn.directionId, dirIn.name AS toDir, dirIn.id AS directionSpecId FROM university unIn INNER JOIN direction dirIn ON unIn.id = dirIn.university_id) \n" +
             "AS dirJoinUn\n" +
             "ON toUn = studStat.universityShortName\n" +
             "INNER JOIN\n" +
-            "(SELECT stud.name AS studName, stud.id AS studId, dirJoinUn.shortName AS fromUn, dirJoinUn.name AS fromDir FROM abitpoisk.students AS stud INNER JOIN \n" +
-            "\t(SELECT unIn.shortName, dirIn.directionId, dirIn.name, dirIn.id AS directionSpecId FROM abitpoisk.university unIn INNER JOIN abitpoisk.direction dirIn ON unIn.id = dirIn.university_id) \n" +
+            "(SELECT stud.name AS studName, stud.id AS studId, dirJoinUn.shortName AS fromUn, dirJoinUn.name AS fromDir FROM students AS stud INNER JOIN \n" +
+            "\t(SELECT unIn.shortName, dirIn.directionId, dirIn.name, dirIn.id AS directionSpecId FROM university unIn INNER JOIN direction dirIn ON unIn.id = dirIn.university_id) \n" +
             "\tAS dirJoinUn\n" +
             " ON stud.direction_id = dirJoinUn.directionSpecId)\n" +
             "AS studJoinDirJoinUn\n" +
@@ -31,7 +31,7 @@ public class FullStudentDataRepository {
     public List<StudentStatement> selectAllStudData(double grade) throws SQLException {
         Connection c = DBConnector.shared.getConnect();
         PreparedStatement ps = c.prepareStatement(selectAllStudDataByGrade);
-        ps.setDouble(1, grade);
+//        ps.setDouble(1, grade);
         List<StudentStatement> result = listFrom(ps.executeQuery());
         return (result.isEmpty()) ? null : result;
     }

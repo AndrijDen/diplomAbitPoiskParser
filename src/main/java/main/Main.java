@@ -3,6 +3,7 @@ package main;
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import database.repositories.FullStudentDataRepository;
 import database.repositories.StudentRepository;
 import database.repositories.StudentStatementRepository;
 import database.repositories.UniversityRepository;
@@ -120,11 +121,18 @@ public class Main {
 //        TestGraph tg = new TestGraph();
 //        tg.testJgraphtLib();
 
-        StudentRepository stud = new StudentRepository();
-        System.out.println("+++++++" + stud.getByGrade(176.75));
+//        StudentRepository stud = new StudentRepository();
+//        System.out.println("+++++++" + stud.getByGrade(176.75));
+
+
+//        FullStudentDataRepository fst = new FullStudentDataRepository();
+//        System.out.println("+++++++" + fst.selectAllStudData(123));
 
 //        GetStudentTransitionDataFromGraph ggr = new GetStudentTransitionDataFromGraph();
 //        ggr.getStudentTransitionData(testDataFindingStrongConnectivitynoLable());
+
+        Parser parse = new Parser();
+        parse.getDirectionIdForStudentsStatementsDb();
     }
 
     public static Graph testDataFindingStrongConnectivitynoLable() {
