@@ -96,11 +96,6 @@ public class Parser {
         return str.substring(0, str.indexOf(":"));
     }
 
-    public void getDirectionIdForStudentsStatementsDb() throws SQLException {
-        StudentStatementRepository  studStatRepository = new StudentStatementRepository();
-        List<StudentStatement> studStatList = studStatRepository.getAll();
-    }
-
     public void parseStudentStatementsFromStudentInfoPage() throws SQLException {
         StudentRepository studentsRepository = new StudentRepository();
         List<Student> studentsList = studentsRepository.getAll();

@@ -1,6 +1,7 @@
 package database.repositories;
 
 import database.DBConnector;
+import models.DataForGraphOperations;
 import models.Direction;
 import models.StudentStatement;
 
@@ -12,31 +13,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FullStudentDataRepository {
-    private static final String selectAllStudDataByGrade = "SELECT studStat.id AS studStatId, studStat.grade, studStat.priority, studName, studId,toUn, toDir, fromUn, fromDir FROM studentStatements studStat \n" +
+    private static final String selectAllStudDataByGrade = "SELECT studStat.id AS studStatId, studStat.grade, studStat.priority, studName, studId, toUniversity, toDirection, toFaculty, fromUniversity, fromDirection, fromDirectionId, fromFaculty FROM abitpoisk.studentStatements studStat \n" +
             "INNER JOIN \n" +
-            "(SELECT unIn.shortName AS toUn, dirIn.directionId, dirIn.name AS toDir, dirIn.id AS directionSpecId FROM university unIn INNER JOIN direction dirIn ON unIn.id = dirIn.university_id) \n" +
+            "(SELECT unIn.shortName AS toUniversity, dirIn.directionId, dirIn.name AS toDirection, dirIn.facultyShortName AS toFaculty, dirIn.id FROM abitpoisk.university unIn INNER JOIN abitpoisk.direction dirIn ON unIn.id = dirIn.university_id) \n" +
             "AS dirJoinUn\n" +
-            "ON toUn = studStat.universityShortName\n" +
+            "ON studStat.directionDataId = dirJoinUn.directionId AND studStat.facultyShortName = toFaculty\n" +
             "INNER JOIN\n" +
-            "(SELECT stud.name AS studName, stud.id AS studId, dirJoinUn.shortName AS fromUn, dirJoinUn.name AS fromDir FROM students AS stud INNER JOIN \n" +
-            "\t(SELECT unIn.shortName, dirIn.directionId, dirIn.name, dirIn.id AS directionSpecId FROM university unIn INNER JOIN direction dirIn ON unIn.id = dirIn.university_id) \n" +
+            "(SELECT stud.name AS studName, stud.id AS studId, dirJoinUn.shortName AS fromUniversity, dirJoinUn.name AS fromDirection, dirJoinUn.facultyShortName AS fromFaculty, stud.direction_id AS fromDirectionId FROM abitpoisk.students AS stud INNER JOIN \n" +
+            "\t(SELECT unIn.shortName, dirIn.directionId, dirIn.name, dirIn.facultyShortName, dirIn.id AS directionSpecId FROM abitpoisk.university unIn INNER JOIN abitpoisk.direction dirIn ON unIn.id = dirIn.university_id) \n" +
             "\tAS dirJoinUn\n" +
-            " ON stud.direction_id = dirJoinUn.directionSpecId)\n" +
+            " ON stud.direction_id = directionSpecId)\n" +
             "AS studJoinDirJoinUn\n" +
             "ON studId = studStat.students_id\n" +
-            "WHERE studStat.grade = 192\n" +
-            "GROUP BY studStat.id";
+            "WHERE studStat.grade BETWEEN ? AND ?";
 
 
-    public List<StudentStatement> selectAllStudData(double grade) throws SQLException {
+    public List<DataForGraphOperations> selectAllStudData(double grade, double gap) throws SQLException {
         Connection c = DBConnector.shared.getConnect();
         PreparedStatement ps = c.prepareStatement(selectAllStudDataByGrade);
-//        ps.setDouble(1, grade);
-        List<StudentStatement> result = listFrom(ps.executeQuery());
+        if (gap < 1) {
+            ps.setDouble(1, grade - 0.001);
+            ps.setDouble(2, grade + 0.001);
+        } else {
+            ps.setDouble(1, grade - 0.001);
+            ps.setDouble(2, grade + gap);
+        }
+        List<DataForGraphOperations> result = listFrom(ps.executeQuery());
         return (result.isEmpty()) ? null : result;
     }
 
-    private List<StudentStatement> listFrom(ResultSet resultSet) throws SQLException {
+    private List<DataForGraphOperations> listFrom(ResultSet resultSet) throws SQLException {
         List list = new ArrayList<>();
         while (resultSet.next()) {
             list.add(getItemFrom(resultSet));
@@ -44,14 +50,19 @@ public class FullStudentDataRepository {
         return list;
     }
 
-    private StudentStatement getItemFrom(ResultSet resultSet) throws SQLException {
-        StudentStatement item = new StudentStatement();
-        item.setId(resultSet.getInt("id"));
+    private DataForGraphOperations getItemFrom(ResultSet resultSet) throws SQLException {
+        DataForGraphOperations item = new DataForGraphOperations();
+        item.setStudStatId(resultSet.getInt("studStatId"));
         item.setGrade(resultSet.getDouble("grade"));
         item.setPriority(resultSet.getInt("priority"));
-        item.setUniversityShortName(resultSet.getString("universityShortName"));
-        item.setDirectionDataId(resultSet.getInt("directionDataId"));
-        item.setStudents_id(resultSet.getInt("students_id"));
+        item.setStudName(resultSet.getString("studName"));
+        item.setStudId(resultSet.getInt("studId"));
+        item.setToUniversity(resultSet.getString("toUniversity"));
+        item.setToDirection(resultSet.getString("toDirection"));
+        item.setToFaculty(resultSet.getString("toFaculty"));
+        item.setFromUniversity(resultSet.getString("fromUniversity"));
+        item.setFromDirection(resultSet.getString("fromDirection"));
+        item.setFromFaculty(resultSet.getString("fromFaculty"));
         return item;
     }
 }

@@ -131,8 +131,9 @@ public class Main {
 //        GetStudentTransitionDataFromGraph ggr = new GetStudentTransitionDataFromGraph();
 //        ggr.getStudentTransitionData(testDataFindingStrongConnectivitynoLable());
 
-        Parser parse = new Parser();
-        parse.getDirectionIdForStudentsStatementsDb();
+        FullStudentDataRepository fullStudData = new FullStudentDataRepository();
+        System.out.println("+++++++" + fullStudData.selectAllStudData(192, 1));
+
     }
 
     public static Graph testDataFindingStrongConnectivitynoLable() {
