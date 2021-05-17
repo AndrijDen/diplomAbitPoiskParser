@@ -8,9 +8,11 @@ public class DataForGraphOperations {
     int studId;
     String toUniversity;
     String toDirection;
+    int toDirectionId;
     String toFaculty;
     String fromUniversity;
     String fromDirection;
+    int fromDirectionId;
     String fromFaculty;
 
     public int getStudStatId() {
@@ -41,6 +43,10 @@ public class DataForGraphOperations {
         return toDirection;
     }
 
+    public int getToDirectionId() {
+        return toDirectionId;
+    }
+
     public String getToFaculty() {
         return toFaculty;
     }
@@ -51,6 +57,10 @@ public class DataForGraphOperations {
 
     public String getFromDirection() {
         return fromDirection;
+    }
+
+    public int getFromDirectionId() {
+        return fromDirectionId;
     }
 
     public String getFromFaculty() {
@@ -85,6 +95,10 @@ public class DataForGraphOperations {
         this.toDirection = toDirection;
     }
 
+    public void setToDirectionId(int toDirectionId) {
+        this.toDirectionId = toDirectionId;
+    }
+
     public void setToFaculty(String toFaculty) {
         this.toFaculty = toFaculty;
     }
@@ -95,6 +109,10 @@ public class DataForGraphOperations {
 
     public void setFromDirection(String fromDirection) {
         this.fromDirection = fromDirection;
+    }
+
+    public void setFromDirectionId(int fromDirectionId) {
+        this.fromDirectionId = fromDirectionId;
     }
 
     public void setFromFaculty(String fromFaculty) {
@@ -111,9 +129,11 @@ public class DataForGraphOperations {
                 ", studId=" + studId +
                 ", toUniversity='" + toUniversity + '\'' +
                 ", toDirection='" + toDirection + '\'' +
+                ", toDirectionId=" + toDirectionId +
                 ", toFaculty='" + toFaculty + '\'' +
                 ", fromUniversity='" + fromUniversity + '\'' +
                 ", fromDirection='" + fromDirection + '\'' +
+                ", fromDirectionId=" + fromDirectionId +
                 ", fromFaculty='" + fromFaculty + '\'' +
                 '}';
     }

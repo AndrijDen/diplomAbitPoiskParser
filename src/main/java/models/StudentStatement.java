@@ -7,15 +7,17 @@ public class StudentStatement {
     private String universityShortName;
     private int directionDataId;
     private int students_id;
+    private int direction_id;
     private String facultyShortName;
 
-    public StudentStatement(int id, double grade, int priority, String universityShortName, int directionDataId, int students_id, String facultyShortName) {
+    public StudentStatement(int id, double grade, int priority, String universityShortName, int directionDataId, int students_id,int direction_id, String facultyShortName) {
         this.id = id;
         this.grade = grade;
         this.priority = priority;
         this.universityShortName = universityShortName;
         this.directionDataId = directionDataId;
         this.students_id = students_id;
+        this.direction_id = direction_id;
         this.facultyShortName = facultyShortName;
     }
 
@@ -43,6 +45,10 @@ public class StudentStatement {
 
     public int getStudents_id() {
         return students_id;
+    }
+
+    public int getDirection_id() {
+        return direction_id;
     }
 
     public String getFacultyShortName() {
@@ -73,6 +79,10 @@ public class StudentStatement {
         this.students_id = students_id;
     }
 
+    public void setDirection_id(int direction_id) {
+        this.direction_id = direction_id;
+    }
+
     public void setFacultyShortName(String facultyShortName) {
         this.facultyShortName = facultyShortName;
     }
@@ -86,6 +96,7 @@ public class StudentStatement {
                 ", universityShortName='" + universityShortName + '\'' +
                 ", directionDataId=" + directionDataId +
                 ", students_id=" + students_id +
+                ", direction_id=" + direction_id +
                 ", facultyShortName=" + facultyShortName +
                 '}';
     }

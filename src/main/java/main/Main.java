@@ -7,8 +7,11 @@ import database.repositories.FullStudentDataRepository;
 import database.repositories.StudentRepository;
 import database.repositories.StudentStatementRepository;
 import database.repositories.UniversityRepository;
+import graphLogic.FindAllCycles;
+import graphLogic.FormStudentGraph;
 import graphLogic.GetStudentTransitionDataFromGraph;
 import graphLogic.RelationshipEdge;
+import models.DataForGraphOperations;
 import models.StudentStatement;
 import models.University;
 import org.apache.commons.logging.LogFactory;
@@ -131,9 +134,29 @@ public class Main {
 //        GetStudentTransitionDataFromGraph ggr = new GetStudentTransitionDataFromGraph();
 //        ggr.getStudentTransitionData(testDataFindingStrongConnectivitynoLable());
 
-        FullStudentDataRepository fullStudData = new FullStudentDataRepository();
-        System.out.println("+++++++" + fullStudData.selectAllStudData(192, 1));
 
+//        Parser parser = new Parser();
+//        parser.testGettingOfStudStatementDirectionId();
+
+
+
+
+//        FullStudentDataRepository fullStudData = new FullStudentDataRepository();
+//        List<DataForGraphOperations> fullStudentDataList = fullStudData.selectAllStudData(189, 1);
+////        System.out.println("+++++++fullStudentDataList" + fullStudentDataList);
+//
+//        FormStudentGraph studGraph = new FormStudentGraph(fullStudentDataList);
+//        Graph studentGraph = studGraph.getGraph();
+//
+//        GetStudentTransitionDataFromGraph getStudTransitData = new GetStudentTransitionDataFromGraph();
+//        getStudTransitData.getStudentTransitionData(studentGraph);
+
+        FindAllCycles findAllCycles = new FindAllCycles();
+        findAllCycles.findAllCycles();
+
+//        Parse only ids
+//        Parser parser = new Parser();
+//        parser.updateStudentsStatementsDirectionIdByStudentsIdAndUniversityShortName("КНУТШ");
     }
 
     public static Graph testDataFindingStrongConnectivitynoLable() {

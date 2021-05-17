@@ -136,11 +136,89 @@ public class Parser {
             String universityShortName = studentHtml.select("tr > td:nth-child(10) a").text();
             int directionDataId = Integer.parseInt(studentHtml.select("tr > td:nth-child(12) span").text());
             String facultyShortName = studentHtml.select("tr > td:nth-child(11)").text();
-            StudentStatement studentStatement = new StudentStatement(0, grade, priority, universityShortName, directionDataId, studentId, facultyShortName);
+
+            String directionLink = studentHtml.select("tr > td:nth-child(4) a").attr("href");
+            String[] directionLinkArr = directionLink.split("/");
+            int directionId = Integer.parseInt(directionLinkArr[directionLinkArr.length - 1]);
+
+            StudentStatement studentStatement = new StudentStatement(0, grade, priority, universityShortName, directionDataId, studentId, directionId, facultyShortName);
 
 //            System.out.print("studentStatement" + studentStatement);
             studentStatementRepository.insert(studentStatement);
         }
+    }
+
+    public void updateStudentsStatementsDirectionIdByStudentsIdAndUniversityShortName(String universityShortName) throws SQLException {
+        List<StudentStatement> studStatList = studentStatementRepository.getByUniversityShortName(universityShortName);
+//        StudentStatement studentStat = studentStatementRepository.getById(1);
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\diplom\\Libraries\\ChromeDriver\\chromedriver.exe");
+
+        for (StudentStatement studentStat: studStatList) {
+            Student student = studentsRepository.getById(studentStat.getStudents_id());
+
+            String studentInfoUrl = baseURL + student.getSearchLink();
+            WebDriver driver = new ChromeDriver();
+            driver.get(studentInfoUrl);
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("table")));
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+            String pageSource = driver.getPageSource();
+            Document doc = Jsoup.parse(pageSource);
+
+            String selectHtmlHigherPrioritiesOfStudent = "tr:has([data-header=\"Пріоритет\"]:matches([%s]))".formatted(studentStat.getPriority());
+            Elements higherPrioritiesData = doc.select(selectHtmlHigherPrioritiesOfStudent);
+
+        if (higherPrioritiesData.size() > 1) {
+            for (Element studentsTableItem : higherPrioritiesData) {
+                Elements studentZnoMarksHtml = studentsTableItem.select("td[data-header=\"Складові заг. балу\"] > dl");
+                if (checkStudentByZnoMarksService.isCurrentStudent(studentZnoMarksHtml, student.getZnoMarks())) {
+                    updateDirectionIdInStudStatDb(studentsTableItem, studentStat.getId(), studentStat.getPriority());
+                }
+            }
+        } else {
+            updateDirectionIdInStudStatDb(higherPrioritiesData.first(), studentStat.getId(), studentStat.getPriority());
+        }
+            driver.close();
+        }
+    }
+
+    private void updateDirectionIdInStudStatDb(Element studentHtml, int studentStatementId, int priority) throws SQLException {
+        if (studentHtml != null) {
+            System.out.print("studentHtml" + studentHtml);
+            System.out.print("studentStatementId" + studentStatementId);
+            String directionLink = studentHtml.select("tr > td:nth-child(4) a").attr("href");
+            String[] directionLinkArr = directionLink.split("/");
+
+            int directionId = Integer.parseInt(directionLinkArr[directionLinkArr.length - 1]);
+            System.out.print("directionId" + directionId);
+
+            studentStatementRepository.updateDirectionId(studentStatementId, directionId, priority);
+        }
+    }
+
+    public void testGettingOfStudStatementDirectionId() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\diplom\\Libraries\\ChromeDriver\\chromedriver.exe");
+        String studentInfoUrl = "https://abit-poisk.org.ua/#search-%D0%A1%D0%BB%D1%96%D1%81%D0%B0%D1%80%D0%B5%D0%BD%D0%BA%D0%BE+%D0%84.+%D0%93.+2020";
+        WebDriver driver = new ChromeDriver();
+        driver.get(studentInfoUrl);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("table")));
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+        String pageSource = driver.getPageSource();
+        Document doc = Jsoup.parse(pageSource);
+
+        String selectHtmlHigherPrioritiesOfStudent = "tr:has([data-header=\"Пріоритет\"]:matches([3]))";
+        Elements higherPrioritiesData = doc.select(selectHtmlHigherPrioritiesOfStudent);
+
+        String directionLink = higherPrioritiesData.select("tr > td:nth-child(4) a").attr("href");
+
+        String[] array = directionLink.split("/");
+
+        int directionId = Integer.parseInt(array[array.length - 1]);
+
+        System.out.print("higherPrioritiesData" + directionId);
     }
 
     public void writeStudentStatementsTestPage(String str)

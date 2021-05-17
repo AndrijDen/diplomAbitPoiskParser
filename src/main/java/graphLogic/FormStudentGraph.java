@@ -14,11 +14,25 @@ public class FormStudentGraph {
         this.studentsData = data;
     }
 
-
     public Graph getGraph() {
 
-        directedGraph.addVertex("0");
-        directedGraph.addEdge("0", "1", new RelationshipEdge("0q"));
+        studentsData.forEach((DataForGraphOperations data) -> {
+            String vertexFrom = data.getFromUniversity() + " | " + data.getFromFaculty() + " | " + data.getFromDirection() + " | " + data.getFromDirectionId();
+            String vertexTo = data.getToUniversity() + " | " + data.getToFaculty() + " | " + data.getToDirection() + " | " + data.getToDirectionId();
+            String studentName = data.getStudName();
+
+            if (!directedGraph.containsVertex(vertexFrom)) {
+                directedGraph.addVertex(vertexFrom);
+            }
+            if (!directedGraph.containsVertex(vertexTo)) {
+                directedGraph.addVertex(vertexTo);
+            }
+            if (vertexFrom != vertexTo) {
+                directedGraph.addEdge(vertexFrom, vertexTo, new RelationshipEdge(studentName));
+            }
+        });
+
+//        System.out.println("+++++++++++++directedGraph" + directedGraph);
 
         return directedGraph;
     }

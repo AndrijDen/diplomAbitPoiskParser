@@ -25,19 +25,23 @@ public class GetStudentTransitionDataFromGraph {
 
 
     private void findStrongConnectedGraphs(Graph graph) {
+//        System.out.println("graph" + graph);
         StrongConnectivityAlgorithm strongConGraphs = new  KosarajuStrongConnectivityInspector(graph);
 //        System.out.println("GetStrConComp" + strongConGraphs.getStronglyConnectedComponents());
         findAllCycles(strongConGraphs.getStronglyConnectedComponents());
     }
 
     private void findAllCycles(List<Graph> strongConnectedGraphs) {
+
+//        System.out.println(strongConnectedGraphs.size() + " strongConnectedGraphs" + strongConnectedGraphs);
+
         for (int i = 0; i < strongConnectedGraphs.size(); i++) {
             if (strongConnectedGraphs.get(i).vertexSet().size() > 1) {
 //                Find all cycles
 //
 //                Then form List of Data with student and university info
 //                List studInfoList;
-                System.out.println("cycles" + strongConnectedGraphs.get(i));
+//                System.out.println("cycles" + strongConnectedGraphs.get(i));
                 findCycles(strongConnectedGraphs.get(i));
                 usedNames.clear();
 //                findCycles(strongConnectedGraphs.get(i));
@@ -52,7 +56,7 @@ public class GetStudentTransitionDataFromGraph {
         findOptimalResFromCycles(cycles, graphWithCycles);
         addCycleIfEvenEdges(cycles);
 
-        System.out.println("cycles" + cycles);
+//        System.out.println("cycles" + cycles);
         getStudentsTransitionsData(cycles, graphWithCycles);
     }
 
@@ -61,7 +65,7 @@ public class GetStudentTransitionDataFromGraph {
         sortList(cycles);
         ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
 
-        System.out.print("findOptimalResFromCycles" + cycles);
+//        System.out.print("findOptimalResFromCycles" + cycles);
 
         for (int i = 0; i < cycles.size(); i++) {
             List element = cycles.get(i);
@@ -92,7 +96,7 @@ public class GetStudentTransitionDataFromGraph {
             }
         }
 
-        System.out.println("findOptimalResFromCycles" + cycles);
+//        System.out.println("findOptimalResFromCycles" + cycles);
         return cycles;
     }
 
@@ -140,7 +144,7 @@ public class GetStudentTransitionDataFromGraph {
     }
 
     private void addCycleIfEvenEdges(List<List> cycles) {
-        System.out.println("cyclesWithEvenEdges" + cyclesWithEvenEdges);
+//        System.out.println("cyclesWithEvenEdges" + cyclesWithEvenEdges);
         cycles.addAll(cyclesWithEvenEdges);
     }
 
@@ -165,9 +169,9 @@ public class GetStudentTransitionDataFromGraph {
             }
         } else {
             for (int i = 0; i < uniqueCycles.size(); i++) {
-                System.out.println("-------------------------cycle" + cycle + "++" + i);
+//                System.out.println("-------------------------cycle" + cycle + "++" + i);
                 if (cycle.contains(uniqueCycles.get(i).get(0)) && cycle.contains(uniqueCycles.get(i).get(1))) {
-                    System.out.println("here not unique");
+//                    System.out.println("here not unique");
                     return false;
                 }
             }
