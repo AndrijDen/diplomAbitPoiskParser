@@ -153,6 +153,7 @@ public class Main {
 
         FindAllCycles findAllCycles = new FindAllCycles();
         findAllCycles.findAllCycles();
+//        findAllCycles.findAllCyclesByGrade();
 
 //        Parse only ids
 //        Parser parser = new Parser();

@@ -27,6 +27,19 @@ public class FullStudentDataRepository {
             "ON studId = studStat.students_id\n" +
             "WHERE studStat.grade BETWEEN ? AND ?";
 
+    private static final String selectAllStudData = "SELECT studStat.id AS studStatId, studStat.grade, studStat.priority, studName, studId, toUniversity, toDirection, toDirectionId, toFaculty, fromUniversity, fromDirection, fromDirectionId, fromFaculty FROM abitpoisk.studentStatements studStat \n" +
+            "INNER JOIN \n" +
+            "(SELECT unIn.shortName AS toUniversity, dirIn.directionId, dirIn.name AS toDirection, dirIn.facultyShortName AS toFaculty, dirIn.id AS toDirectionId FROM abitpoisk.university unIn INNER JOIN abitpoisk.direction dirIn ON unIn.id = dirIn.university_id) \n" +
+            "AS dirJoinUn\n" +
+            "ON studStat.direction_id = toDirectionId\n" +
+            "INNER JOIN\n" +
+            "(SELECT stud.name AS studName, stud.id AS studId, dirJoinUn.shortName AS fromUniversity, dirJoinUn.name AS fromDirection, dirJoinUn.facultyShortName AS fromFaculty, stud.direction_id AS fromDirectionId FROM abitpoisk.students AS stud INNER JOIN \n" +
+            "\t(SELECT unIn.shortName, dirIn.directionId, dirIn.name, dirIn.facultyShortName, dirIn.id AS directionSpecId FROM abitpoisk.university unIn INNER JOIN abitpoisk.direction dirIn ON unIn.id = dirIn.university_id) \n" +
+            "\tAS dirJoinUn\n" +
+            " ON stud.direction_id = directionSpecId)\n" +
+            "AS studJoinDirJoinUn\n" +
+            "ON studId = studStat.students_id";
+
 
     public List<DataForGraphOperations> selectAllStudData(double grade, double gap) throws SQLException {
         Connection c = DBConnector.shared.getConnect();
@@ -38,6 +51,13 @@ public class FullStudentDataRepository {
             ps.setDouble(1, grade - 1);
             ps.setDouble(2, grade + gap);
         }
+        List<DataForGraphOperations> result = listFrom(ps.executeQuery());
+        return (result.isEmpty()) ? null : result;
+    }
+
+    public List<DataForGraphOperations> selectAllStud() throws SQLException {
+        Connection c = DBConnector.shared.getConnect();
+        PreparedStatement ps = c.prepareStatement(selectAllStudData);
         List<DataForGraphOperations> result = listFrom(ps.executeQuery());
         return (result.isEmpty()) ? null : result;
     }

@@ -33,7 +33,7 @@ public class GetStudentTransitionDataFromGraph {
 
     private void findAllCycles(List<Graph> strongConnectedGraphs) {
 
-//        System.out.println(strongConnectedGraphs.size() + " strongConnectedGraphs" + strongConnectedGraphs);
+        System.out.println(strongConnectedGraphs.size() + " strongConnectedGraphs" + strongConnectedGraphs);
 
         for (int i = 0; i < strongConnectedGraphs.size(); i++) {
             if (strongConnectedGraphs.get(i).vertexSet().size() > 1) {
@@ -56,7 +56,7 @@ public class GetStudentTransitionDataFromGraph {
         findOptimalResFromCycles(cycles, graphWithCycles);
         addCycleIfEvenEdges(cycles);
 
-//        System.out.println("cycles" + cycles);
+        System.out.println("cycles" + cycles);
         getStudentsTransitionsData(cycles, graphWithCycles);
     }
 

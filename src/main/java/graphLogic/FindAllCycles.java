@@ -14,6 +14,22 @@ public class FindAllCycles {
     public void findAllCycles() throws SQLException {
         StudentStatementRepository studStatRepository = new StudentStatementRepository();
         List<StudentStatement> studStatList = studStatRepository.getAllOrderedByGrade();
+
+        FullStudentDataRepository fullStudData = new FullStudentDataRepository();
+        List<DataForGraphOperations> fullStudentDataList = fullStudData.selectAllStud();
+
+        System.out.println("fullStudentDataList" + fullStudentDataList.size());
+
+        FormStudentGraph studGraph = new FormStudentGraph(fullStudentDataList);
+        Graph studentGraph = studGraph.getGraph();
+
+        GetStudentTransitionDataFromGraph getStudTransitData = new GetStudentTransitionDataFromGraph();
+        getStudTransitData.getStudentTransitionData(studentGraph);
+    }
+
+    public void findAllCyclesByGrade() throws SQLException {
+        StudentStatementRepository studStatRepository = new StudentStatementRepository();
+        List<StudentStatement> studStatList = studStatRepository.getAllOrderedByGrade();
         double lastGrade = 0;
         for (int i = 0; i < studStatList.size(); i++) {
             double grade = studStatList.get(i).getGrade();
@@ -28,7 +44,7 @@ public class FindAllCycles {
     private void searchCyclesByGrade(double grade) throws SQLException {
         FullStudentDataRepository fullStudData = new FullStudentDataRepository();
 
-        List<DataForGraphOperations> fullStudentDataList = fullStudData.selectAllStudData(grade, 1);
+        List<DataForGraphOperations> fullStudentDataList = fullStudData.selectAllStudData(150, 50);
 //        System.out.println("+++++++fullStudentDataList" + fullStudentDataList);
 
         if (fullStudentDataList != null && !fullStudentDataList.isEmpty()) {
@@ -39,4 +55,5 @@ public class FindAllCycles {
             getStudTransitData.getStudentTransitionData(studentGraph);
         }
     }
+
 }
