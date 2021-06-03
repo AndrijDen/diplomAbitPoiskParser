@@ -15,8 +15,10 @@ public class GetStudentTransitionDataFromGraph {
     private ArrayList<String> usedNames = new ArrayList();
     private ArrayList<List<String>> uniqueCycles = new ArrayList();
     private ArrayList<List<String>> cyclesWithEvenEdges = new ArrayList();
+    private boolean displayGraphs = false;
 
-    public void getStudentTransitionData(Graph graph) {
+    public void getStudentTransitionData(Graph graph, boolean dispGraphs) {
+        displayGraphs = dispGraphs;
         findStrongConnectedGraphs(graph);
     }
 //    public void getStudentTransitionData() {
@@ -55,9 +57,14 @@ public class GetStudentTransitionDataFromGraph {
 
         findOptimalResFromCycles(cycles, graphWithCycles);
         addCycleIfEvenEdges(cycles);
-
+        System.out.println("--------------------------------------------");
         System.out.println("cycles" + cycles);
-        getStudentsTransitionsData(cycles, graphWithCycles);
+//        getStudentsTransitionsData(cycles, graphWithCycles);
+
+        if (displayGraphs) {
+            DisplayAllCycles displayAllCycles = new DisplayAllCycles();
+            displayAllCycles.displayFoundCycles(getStudentsTransitionsData(cycles, graphWithCycles));
+        }
     }
 
     private List findOptimalResFromCycles(List<List> cycles, Graph graph) {
@@ -203,7 +210,7 @@ public class GetStudentTransitionDataFromGraph {
 
     private void sortList(List<List> cycles) {
         cycles.sort((o1, o2) -> {
-            if (o1.size() >= o2.size()) {
+            if (o1.size() > o2.size()) {
                 return 1;
             } else if (o1.size() < o2.size()) {
                 return -1;
