@@ -1,7 +1,6 @@
 package parser;
 
 import models.ZnoMark;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
@@ -15,6 +14,7 @@ public class CheckStudentByZnoMarksService {
         this.znoMarks = znoMarks;
     }
 
+//    checking if student is current student by zno marks
     public boolean isCurrentStudent(Elements studentMarksHtml, ZnoMark[] znoMarks) {
         setData(studentMarksHtml, znoMarks);
         return checkIsCurrentStudent();
@@ -53,5 +53,4 @@ public class CheckStudentByZnoMarksService {
         }
         return hasValue;
     }
-
 }

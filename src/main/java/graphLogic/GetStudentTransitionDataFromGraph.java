@@ -5,8 +5,6 @@ import org.jgrapht.Graph;
 import org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector;
 import org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles;
 import org.jgrapht.alg.interfaces.StrongConnectivityAlgorithm;
-import org.jgrapht.graph.DefaultDirectedGraph;
-import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.DirectedMultigraph;
 
 import java.util.*;
@@ -21,10 +19,6 @@ public class GetStudentTransitionDataFromGraph {
         displayGraphs = dispGraphs;
         findStrongConnectedGraphs(graph);
     }
-//    public void getStudentTransitionData() {
-//        findStrongConnectedGraphs(testDataFindingStrongConnectivitynoLable());
-//    }
-
 
     private void findStrongConnectedGraphs(Graph graph) {
 //        System.out.println("graph" + graph);
@@ -39,14 +33,8 @@ public class GetStudentTransitionDataFromGraph {
 
         for (int i = 0; i < strongConnectedGraphs.size(); i++) {
             if (strongConnectedGraphs.get(i).vertexSet().size() > 1) {
-//                Find all cycles
-//
-//                Then form List of Data with student and university info
-//                List studInfoList;
-//                System.out.println("cycles" + strongConnectedGraphs.get(i));
                 findCycles(strongConnectedGraphs.get(i));
                 usedNames.clear();
-//                findCycles(strongConnectedGraphs.get(i));
             }
         }
     }
@@ -59,7 +47,6 @@ public class GetStudentTransitionDataFromGraph {
         addCycleIfEvenEdges(cycles);
         System.out.println("--------------------------------------------");
         System.out.println("cycles" + cycles);
-//        getStudentsTransitionsData(cycles, graphWithCycles);
 
         if (displayGraphs) {
             DisplayAllCycles displayAllCycles = new DisplayAllCycles();
@@ -71,8 +58,6 @@ public class GetStudentTransitionDataFromGraph {
 
         sortList(cycles);
         ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
-
-//        System.out.print("findOptimalResFromCycles" + cycles);
 
         for (int i = 0; i < cycles.size(); i++) {
             List element = cycles.get(i);
@@ -93,16 +78,12 @@ public class GetStudentTransitionDataFromGraph {
             if (elementsToRemove.size() > 0) {
                 Collections.reverse(elementsToRemove);
                 for (int k = 0; k < elementsToRemove.size(); k++) {
-//                    System.out.println("elementsToRemove.get(k)" + elementsToRemove.get(k));
-//                    Not working i dont know why
-//                    cycles.remove(elementsToRemove.get(k));
                     int q = elementsToRemove.get(k);
                     cycles.remove(q);
                 }
                 elementsToRemove.clear();
             }
         }
-
 //        System.out.println("findOptimalResFromCycles" + cycles);
         return cycles;
     }
@@ -126,7 +107,6 @@ public class GetStudentTransitionDataFromGraph {
                 StudentTransitionData studTransitData = new StudentTransitionData(getNames(graph.getAllEdges(fromUniversity, toUniversity)), fromUniversity, toUniversity);
                 studTransitionData.add(studTransitData);
 //                System.out.println(i + j + "studTransitionData" + studTransitionData);
-
             }
             studsTransitionData.add(studTransitionData);
 //            System.out.println("studTransitionData" + studTransitionData);
@@ -137,7 +117,6 @@ public class GetStudentTransitionDataFromGraph {
 
     private String getNames(Set<RelationshipEdge> names) {
         String name = "";
-//        System.out.println("names" + names);
         Iterator<RelationshipEdge> iterator = names.iterator();
 
         while (iterator.hasNext()) {
@@ -151,7 +130,6 @@ public class GetStudentTransitionDataFromGraph {
     }
 
     private void addCycleIfEvenEdges(List<List> cycles) {
-//        System.out.println("cyclesWithEvenEdges" + cyclesWithEvenEdges);
         cycles.addAll(cyclesWithEvenEdges);
     }
 
@@ -176,9 +154,7 @@ public class GetStudentTransitionDataFromGraph {
             }
         } else {
             for (int i = 0; i < uniqueCycles.size(); i++) {
-//                System.out.println("-------------------------cycle" + cycle + "++" + i);
                 if (cycle.contains(uniqueCycles.get(i).get(0)) && cycle.contains(uniqueCycles.get(i).get(1))) {
-//                    System.out.println("here not unique");
                     return false;
                 }
             }
@@ -196,8 +172,6 @@ public class GetStudentTransitionDataFromGraph {
                 if (Arr1.get(i) == Arr2.get(j)) {
                     i++;
                     j++;
-                    // If array B is completely
-                    // traversed
                     if (i == arr1Length || j == arr2Length)
                         return true;
                 } else {
@@ -220,9 +194,7 @@ public class GetStudentTransitionDataFromGraph {
     }
 
     private List findOptimalRes(List cycles) {
-
         ArrayList<Integer> elementsToRemove = new ArrayList<Integer>();
-
 
         for (int i = 0; i < cycles.size()-1; i++) {
             for (int j = i+1; j < cycles.size(); j++) {
@@ -230,22 +202,16 @@ public class GetStudentTransitionDataFromGraph {
                     elementsToRemove.add(j);
                 }
             }
-
             if (elementsToRemove.size() > 0) {
                 Collections.reverse(elementsToRemove);
                 for (int k = 0; k < elementsToRemove.size(); k++) {
-//                    System.out.println("elementsToRemove.get(k)" + elementsToRemove.get(k));
-//                    Not working i dont know why
-//                    cycles.remove(elementsToRemove.get(k));
                     int q = elementsToRemove.get(k);
                     cycles.remove(q);
                 }
                 elementsToRemove.clear();
             }
         }
-
         System.out.println("cycles test" + cycles);
-
         return cycles;
     }
 
@@ -257,8 +223,6 @@ public class GetStudentTransitionDataFromGraph {
             if (Arr1.get(i) == Arr2.get(j)) {
                 i++;
                 j++;
-                // If array B is completely
-                // traversed
                 if (i == arr1Length || j == arr2Length)
                     return true;
             } else {
@@ -271,7 +235,6 @@ public class GetStudentTransitionDataFromGraph {
     private Graph testDataFindingStrongConnectivitynoLable() {
         DirectedMultigraph<String, RelationshipEdge> directedGraph =
                 new DirectedMultigraph<String, RelationshipEdge>(RelationshipEdge.class);
-        // Test 1
 
         directedGraph.addVertex("0");
         directedGraph.addVertex("1");

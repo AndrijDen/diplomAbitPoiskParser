@@ -12,9 +12,6 @@ import java.util.List;
 public class FindAllCycles {
 
     public void findAllCycles(boolean displayGraphs) throws SQLException {
-        StudentStatementRepository studStatRepository = new StudentStatementRepository();
-        List<StudentStatement> studStatList = studStatRepository.getAllOrderedByGrade();
-
         FullStudentDataRepository fullStudData = new FullStudentDataRepository();
         List<DataForGraphOperations> fullStudentDataList = fullStudData.selectAllStud();
 
@@ -34,7 +31,6 @@ public class FindAllCycles {
         for (int i = 0; i < studStatList.size(); i++) {
             double grade = studStatList.get(i).getGrade();
             if (grade - lastGrade >= 1) {
-//                System.out.println("grade" + grade);
                 searchCyclesByGrade(grade);
                 lastGrade = grade;
             }
@@ -43,17 +39,13 @@ public class FindAllCycles {
 
     private void searchCyclesByGrade(double grade) throws SQLException {
         FullStudentDataRepository fullStudData = new FullStudentDataRepository();
-
         List<DataForGraphOperations> fullStudentDataList = fullStudData.selectAllStudData(150, 50);
-//        System.out.println("+++++++fullStudentDataList" + fullStudentDataList);
 
         if (fullStudentDataList != null && !fullStudentDataList.isEmpty()) {
             FormStudentGraph studGraph = new FormStudentGraph(fullStudentDataList);
             Graph studentGraph = studGraph.getGraph();
-
             GetStudentTransitionDataFromGraph getStudTransitData = new GetStudentTransitionDataFromGraph();
             getStudTransitData.getStudentTransitionData(studentGraph, false);
         }
     }
-
 }

@@ -14,21 +14,16 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -54,13 +49,10 @@ public class Parser {
 
         for (Direction direction: directionList) {
             String directionUrl = directionBaseUrl + direction.getId();
-/*        for (int i = 0; i < 1; i++) {
-            String directionUrl = directionBaseUrl + directionList.get(i).getId();*/
             Document doc = Jsoup.connect(directionUrl).get();
             Elements studentsTable = doc.select("tr.application-status-9:has([data-header=\"Пріоритет\"]:matches([2-9]))");
             for (Element studentsTableItem : studentsTable) {
                 getStudentFromHtmlAndInsertToDb(studentsTableItem, direction.getId());
-              /*  getStudentFromHtmlAndInsertToDb(studentsTableItem, directionList.get(i).getId());*/
             }
         }
     }
@@ -148,9 +140,9 @@ public class Parser {
         }
     }
 
+//    Help func for adding direction_id
     public void updateStudentsStatementsDirectionIdByStudentsIdAndUniversityShortName(String universityShortName) throws SQLException {
         List<StudentStatement> studStatList = studentStatementRepository.getByUniversityShortName(universityShortName);
-//        StudentStatement studentStat = studentStatementRepository.getById(1);
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\diplom\\Libraries\\ChromeDriver\\chromedriver.exe");
 
         for (StudentStatement studentStat: studStatList) {

@@ -44,6 +44,7 @@ public class DisplayAllCycles extends
         frame.setVisible(true);
     }
 
+
     private static void formGraph(Graph g, List<StudentTransitionData> studTransDataList) {
         String toUniversity = "";
         for (int i = 0; i < studTransDataList.size(); i++) {
@@ -65,25 +66,12 @@ public class DisplayAllCycles extends
         // create a JGraphT graph
         ListenableGraph<String, DefaultEdge> g =
                 new DefaultListenableGraph<>(new DirectedMultigraph<>(RelationshipEdge.class));
-
         jgxAdapter = new JGraphXAdapter<>(g);
-
         mxGraphComponent component = new mxGraphComponent(jgxAdapter);
         getContentPane().add(component);
-
         formGraph(g, studTransDataList);
-
-
         // positioning via jgraphx layouts
         mxCircleLayout layout = new mxCircleLayout(jgxAdapter);
-
-        // center the circle
-//        int radius = 100;
-//        layout.setX0((DEFAULT_SIZE.width / 2.0) - radius);
-//        layout.setY0((DEFAULT_SIZE.height / 2.0) - radius);
-//        layout.setRadius(radius);
-//        layout.setMoveCircle(true);
-
         layout.execute(jgxAdapter.getDefaultParent());
     }
 }

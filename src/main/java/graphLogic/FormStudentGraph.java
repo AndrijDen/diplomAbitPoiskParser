@@ -32,8 +32,6 @@ public class FormStudentGraph {
             }
         });
 
-//        System.out.println("+++++++++++++directedGraph" + directedGraph);
-
         return directedGraph;
     }
 }
