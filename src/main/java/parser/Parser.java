@@ -1,6 +1,5 @@
 package parser;
 
-import com.google.gson.Gson;
 import database.repositories.DirectionRepository;
 import database.repositories.StudentRepository;
 import database.repositories.StudentStatementRepository;

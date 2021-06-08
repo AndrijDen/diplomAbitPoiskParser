@@ -2,9 +2,6 @@ package database.repositories;
 
 import database.DBConnector;
 import models.DataForGraphOperations;
-import models.Direction;
-import models.StudentStatement;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

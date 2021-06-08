@@ -14,7 +14,7 @@ public class Main {
 //        Finding all cycles in graph
         FindAllCycles findAllCycles = new FindAllCycles();
 
-//        @param display graph in JFrame
+//        @param display graph using JFrame
         findAllCycles.findAllCycles(false);
     }
 }
